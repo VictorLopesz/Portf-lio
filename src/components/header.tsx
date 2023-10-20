@@ -10,8 +10,8 @@ const Header = () => {
         ">
             <div
                 className="
-             uppercase ml-9 font-extrabold
-             font-sansnarrow text-[35px]
+              ml-9 font-sacramentos 
+              text-[40px]
              ">
                 Victor Lopes
             </div>

@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         'sansnarrow': ['PT Sans Narrow', 'sans-serif'],
+        'sacramentos': ['Sacramento', 'cursive'],
       },
       colors: {
         "dark-purple": "#081451",
