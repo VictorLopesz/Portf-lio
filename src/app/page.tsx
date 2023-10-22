@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Navbar from "@/components/Navbar";
 import next from "next";
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div>
         Olá mundo
       </div>
