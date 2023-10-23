@@ -2,27 +2,25 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import react, { useState } from 'react';
-import { AiFillGithub, AiFillLinkedin, AiOutlineMenu, AiOutlineClose, AiOutlineWhatsApp } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import {BiBookBookmark, BiSolidMessageRounded} from 'react-icons/bi';
-import {BsFillPersonVcardFill, BsPersonWorkspace} from 'react-icons/bs';
+import {BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram} from 'react-icons/bs';
+import {MdEmail} from 'react-icons/md';
 import {GiHamburgerMenu, GiSkills} from 'react-icons/gi';
 import {CgCloseR} from 'react-icons/cg';
-import logotipo from '../../../public/assets/logotipo.png'
+import logotipo from '../../../public/assets/logotipo.png';
+import {IoLogoWhatsapp} from 'react-icons/io';
 
 
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [iconMenu, setIconMenu] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuClose, setMenuClose] = useState(false);
 
+    
     const handleNav = () => {
         setMenuOpen(!menuOpen);
     }
-
-    const Nav = () => {
-        setIconMenu(!iconMenu);
-    }
-
 
     return (
         <nav className="fixed w-full h-24 shadow-sm bg-gradient-to-r from-[#0F182C] to-[#16304E] font-sansnarrow">
@@ -87,19 +85,21 @@ const Navbar = () => {
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[45%] sm:hidden h-screen bg-gradient-to-r from-[#0F182C] to-[#16304E] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
-                    "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-4 duration-75 overflow-y-auto overflow-x-hidden "
+                    ? "fixed left-0 top-0 w-[55%] sm:hidden h-screen bg-gradient-to-r from-[#142742] to-[#16304E] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-75 overflow-y-auto overflow-x-hidden "
             }
             >
-
                 <div className="flex w-full items-center justify-end">
                     <div onClick={handleNav} className="cursor-pointer text-[#8D6D3A] active:text-[#382b18]">
                         <CgCloseR size={25} />
                     </div>
                 </div>
-                <br />
-                <br />
-                <div className="flex-col py-20 text-white text-sm uppercase">
+<br/>
+                <Image
+                        src={logotipo}
+                        alt="logot"
+                        className="cursor-pointer"/>                
+                <div className="flex-col text-white text-sm uppercase">
                     <ul>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
@@ -139,20 +139,31 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <hr className="w-full"/>
-                <div className="flex items-center justify-center w-full">
-
+                <br/>
+                <br/>
+                <hr />
+                <br/>
+                
+                <div className="items-center flex justify-center">
                 <div className="flex items-center text-white mt-5 text-2xl">
                     <Link href={'/'}>
-                        <AiFillGithub className="m-2 active:text-[#000000] transition duration-200 ease-in-out"/>
+                        <AiFillGithub className="m-1 active:text-[#000000] transition duration-200 ease-in-out"/>
                     </Link>
 
                     <Link href={'/'}>
-                        <AiFillLinkedin className="m-2 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
+                        <AiFillLinkedin className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
                     </Link>
 
                     <Link href={'/'}>
-                        <AiOutlineWhatsApp className="m-2 active:text-[#25D366] transition duration-200 ease-in-out"/>
+                        <IoLogoWhatsapp className="m-1 active:text-[#25D366] transition duration-200 ease-in-out"/>
+                    </Link>
+    
+                    <Link href={'/'}>
+                        <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
+                    </Link>
+
+                    <Link href={'/'}>
+                    <MdEmail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out"/>
                     </Link>
                 </div>
                 </div>
