@@ -86,7 +86,7 @@ const Navbar = () => {
             <div className={
                 menuOpen
                     ? "fixed left-0 top-0 w-[55%] sm:hidden h-screen bg-gradient-to-r from-[#142742] to-[#16304E] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
-                    "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-75 overflow-y-auto overflow-x-hidden "
+                    "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
             }
             >
                 <div className="flex w-full items-center justify-end">
@@ -129,13 +129,13 @@ const Navbar = () => {
                                <BiBookBookmark className="m-2"/> Cursos
                             </li>
                         </Link>
-                        <Link href="/">
+                        {/* <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer hover:text-[#8d6096] active:text-[#8D6D3A]"
                             >
                                <BiSolidMessageRounded className="m-2"/> Contato
                             </li>
-                        </Link>
+                        </Link> */}
 
                     </ul>
                 </div>
@@ -144,25 +144,28 @@ const Navbar = () => {
                 <hr />
                 <br/>
                 
+                <div className="flex items-center justify-center w-full text-white font-sansnarrow py-1 pt-10">
+                    <span className="text-sm ">CONTATO</span>
+                    </div>
                 <div className="items-center flex justify-center">
                 <div className="flex items-center text-white mt-5 text-2xl">
-                    <Link href={'/'}>
+                    <Link href={'https://github.com/VictorLopesz'}>
                         <AiFillGithub className="m-1 active:text-[#000000] transition duration-200 ease-in-out"/>
                     </Link>
 
-                    <Link href={'/'}>
+                    <Link href={'https://www.linkedin.com/in/lopesvictorh/'}>
                         <AiFillLinkedin className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
                     </Link>
 
-                    <Link href={'/'}>
+                    <Link href={'https://wa.me/5521980260633'}>
                         <IoLogoWhatsapp className="m-1 active:text-[#25D366] transition duration-200 ease-in-out"/>
                     </Link>
     
-                    <Link href={'/'}>
+                    <Link href={'https://t.me/pleasevictor'}>
                         <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
                     </Link>
 
-                    <Link href={'/'}>
+                    <Link href={'mailto:euvictor_h@hotmail.com'}>
                     <MdEmail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out"/>
                     </Link>
                 </div>
