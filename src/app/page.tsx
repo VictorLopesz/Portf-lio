@@ -8,9 +8,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div>
+
+      <div className="pt-32 w-[100%]">
+      <div className="">
         Olá mundo
       </div>
+      </div>
+      
     </>
   )
 };
