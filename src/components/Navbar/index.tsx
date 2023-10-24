@@ -23,7 +23,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="fixed w-full h-24 shadow-sm bg-gradient-to-r from-[#0F182C] to-[#16304E] font-sansnarrow">
+        <nav className="fixed w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow ">
             <div className="flex justify-between items-center h-full px-4">
                 <Link href='/'>
                     <Image
@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[55%] sm:hidden h-screen bg-gradient-to-r from-[#142742] to-[#16304E] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen bg-gradient-to-r from-[#151d29] to-[#204168] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
                     "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
             }
             >
