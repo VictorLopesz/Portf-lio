@@ -3,6 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import avatar from '../../../public/assets/avatar.png'
 import { Link } from 'react-scroll';
+import { TypeAnimation } from 'react-type-animation';
+
+
 
 const Welcome = () => {
     return (
@@ -10,13 +13,28 @@ const Welcome = () => {
         <section>
             <div className="grid grid-cols-1 ">
                 <div className="place-self-center col-span-7 text-center sm:text-left">
-                    <h1 className="text-white mb-4 text-7xl sm:text-5x1 lg:text-6xl font-extrabold">
-                        Olá, eu sou Victor!
+                    <h1 className="text-white mb-4 text-4x1 sm:text-5x1 lg:text-6xl font-extrabold">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#574d3d] to-[#E0C997]">
+                        Olá, eu sou <br/> {" "}
+                        </span>
+                        
+<TypeAnimation
+      sequence={[
+        'Victor',
+        1000,
+        'Desenvolvedor front-end',
+        1000,
+      ]}
+      wrapper="span"
+      speed={50}
+      repeat={Infinity}
+    />
+                    </h1>
+                    <br/><br/>
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                             Lorem ipsum dolor sit amet consectuter adpsicing elit. Quisquis,
                             voluptatum.
                         </p>
-                    </h1>
 
                     <div>
                         <button className="
