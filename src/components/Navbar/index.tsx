@@ -2,22 +2,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import react, { useState } from 'react';
-import { AiFillGithub, AiFillLinkedin, AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
-import {BiBookBookmark, BiSolidMessageRounded} from 'react-icons/bi';
-import {BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram} from 'react-icons/bs';
-import {MdEmail} from 'react-icons/md';
-import {GiHamburgerMenu, GiSkills} from 'react-icons/gi';
-import {CgCloseR} from 'react-icons/cg';
+import { BiBookBookmark } from 'react-icons/bi';
+import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
+import { GiHamburgerMenu, GiSkills } from 'react-icons/gi';
+import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
-import {IoLogoWhatsapp} from 'react-icons/io';
+import { ImMail } from 'react-icons/im';
+import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
 
 
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [menuClose, setMenuClose] = useState(false);
 
-    
+
     const handleNav = () => {
         setMenuOpen(!menuOpen);
     }
@@ -94,39 +92,39 @@ const Navbar = () => {
                         <CgCloseR size={25} />
                     </div>
                 </div>
-<br/>
+                <br />
                 <Image
-                        src={logotipo}
-                        alt="logot"
-                        className="cursor-pointer"/>                
+                    src={logotipo}
+                    alt="logot"
+                    className="cursor-pointer" />
                 <div className="flex-col text-white text-sm uppercase">
                     <ul>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
                             >
-                               <BsFillPersonVcardFill className="m-2"/> Sobre mim
+                                <BsFillPersonVcardFill className="m-2" /> Sobre mim
                             </li>
                         </Link>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
-                                 <GiSkills className="m-2"/>  Skills
+                                <GiSkills className="m-2" />  Skills
                             </li>
                         </Link>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
-                               <BsPersonWorkspace className="m-2"/> Portfólio
+                                <BsPersonWorkspace className="m-2" /> Portfólio
                             </li>
                         </Link>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
                             >
-                               <BiBookBookmark className="m-2"/> Cursos
+                                <BiBookBookmark className="m-2" /> Cursos
                             </li>
                         </Link>
                         {/* <Link href="/">
@@ -139,36 +137,38 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <hr />
-                <br/>
-                
+                <br />
+
                 <div className="flex items-center justify-center w-full text-white font-sansnarrow py-1 pt-10">
                     <span className="text-sm ">CONTATO</span>
-                    </div>
-                <div className="items-center flex justify-center">
-                <div className="flex items-center text-white mt-5 text-2xl">
-                    <Link href={'https://github.com/VictorLopesz'}>
-                        <AiFillGithub className="m-1 active:text-[#000000] transition duration-200 ease-in-out"/>
-                    </Link>
-
-                    <Link href={'https://www.linkedin.com/in/lopesvictorh/'}>
-                        <AiFillLinkedin className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
-                    </Link>
-
-                    <Link href={'https://wa.me/5521980260633'}>
-                        <IoLogoWhatsapp className="m-1 active:text-[#25D366] transition duration-200 ease-in-out"/>
-                    </Link>
-    
-                    <Link href={'https://t.me/pleasevictor'}>
-                        <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out "/>
-                    </Link>
-
-                    <Link href={'mailto:euvictor_h@hotmail.com'}>
-                    <MdEmail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out"/>
-                    </Link>
                 </div>
+                <div className="items-center flex justify-center">
+                    <div className="flex items-center text-white mt-5 text-2xl">
+                        <Link href={'https://github.com/VictorLopesz'}>
+                            <FaGithubSquare className="m-1 text-[29px] active:text-[#000000] transition duration-200 ease-in-out" />
+                        </Link>
+ 
+                        <Link href={'mailto:euvictor_h@hotmail.com'}>
+                            <ImMail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out" />
+                        </Link>
+
+
+                        <Link href={'https://t.me/pleasevictor'}>
+                            <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                        </Link>
+                        
+                        <Link href={'https://www.linkedin.com/in/lopesvictorh/'}>
+                            <FaLinkedin className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                        </Link>
+
+                        <Link href={'https://wa.me/5521980260633'}>
+                            <FaWhatsappSquare className="m-1 text-[29px] active:text-[#25D366] transition duration-200 ease-in-out" />
+                        </Link>
+
+                    </div>
                 </div>
             </div>
         </nav>
