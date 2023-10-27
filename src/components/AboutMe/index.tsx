@@ -3,36 +3,36 @@ import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
 import TabButton from '../TabButton';
 
-const TAB_DATA = [
-  {
-    title: "educação",
-    id: "educação",
-    content: (
-      <ul className="font-sansnarrow">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Tailwind CSS</li>
-        <li>JavaScript</li>
-        <li>React.Js</li>
-        <li>Next.Js</li>
-        <li>MySQL</li>
-      </ul>
-    )
-  }
-]
+// const TAB_DATA = [
+//   {
+//     title: "educação",
+//     id: "educação",
+//     content: (
+//       <ul className="font-sansnarrow">
+//         <li>HTML</li>
+//         <li>CSS</li>
+//         <li>Tailwind CSS</li>
+//         <li>JavaScript</li>
+//         <li>React.Js</li>
+//         <li>Next.Js</li>
+//         <li>MySQL</li>
+//       </ul>
+//     )
+//   }
+// ]
 
 function AboutMe() {
 
-  const [tab, setTab] = useState("educação");
-  const [isPendent, startTransition] = useTransition();
+  // const [tab, setTab] = useState("educação");
+  // const [isPendent, startTransition] = useTransition();
 
-  const handleTabChange = (id: any) => {
-    if (typeof startTransition === 'function') {
-      startTransition(() => {
-        setTab(id);
-      });
-    }
-  };
+  // const handleTabChange = (id: any) => {
+  //   if (typeof startTransition === 'function') {
+  //     startTransition(() => {
+  //       setTab(id);
+  //     });
+  //   }
+  // };
 
   return (
     <section className="text-white pt-28">
@@ -57,7 +57,7 @@ function AboutMe() {
               Sou um desenvolvedor front end end end end end
               Sou um desenvolvedor front end end end end end
             </p>
-          <div className="flex font-sansnarrow flex-row mt-8">
+          {/* <div className="flex font-sansnarrow flex-row mt-8">
             <TabButton
               selectTab={() => handleTabChange("educacao")}
               active={tab === "educacao"}
@@ -70,7 +70,7 @@ function AboutMe() {
             >{" "}
               Profissional{" "}
             </TabButton>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import react, { useState } from 'react';
-import { BiBookBookmark } from 'react-icons/bi';
+import { BiBookBookmark, BiSolidMessageRounded } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
 import { GiHamburgerMenu, GiSkills } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
@@ -59,7 +59,7 @@ const Navbar = () => {
                              text-bold
                              hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
                              active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">Portfólio</li>
+                             transition duration-500 ease-in-out">projetos</li>
                         </Link>
                         <Link href="/">
                             <li className="pb-2 text-white  p-2 uppercase py-2
@@ -112,14 +112,14 @@ const Navbar = () => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
-                                <GiSkills className="m-2" />  Skills
+                                <GiSkills className="m-2" /> Skills
                             </li>
                         </Link>
                         <Link href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
-                                <BsPersonWorkspace className="m-2" /> Portfólio
+                                <BsPersonWorkspace className="m-2" /> Projetos
                             </li>
                         </Link>
                         <Link href="/">
