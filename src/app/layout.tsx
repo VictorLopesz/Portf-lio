@@ -2,7 +2,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Inter } from 'next/font/google'
-// import { Link } from 'react-router-dom'
+// import Link  from 'next/link';
+import  Link  from 'react-dom';
 
 
 const inter = Inter({ subsets: ['latin'] })

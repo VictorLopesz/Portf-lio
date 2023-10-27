@@ -12,6 +12,7 @@ import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
 
 
 
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,6 +34,7 @@ const Navbar = () => {
                         priority
                     />
                 </Link>
+
                 <div className="hidden sm:flex">
                     <ul className="hidden sm:flex text-sm mr-52 mt-8">
                         <Link href="/">
@@ -137,6 +139,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
+                
                 <br />
                 <br />
                 <hr />
