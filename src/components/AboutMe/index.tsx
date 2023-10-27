@@ -46,17 +46,17 @@ function AboutMe() {
         />
         <div>
           <h2 className="font-sansnarrow text-[40px] font-bold text-white mb-4 uppercase">Sobre Mim...</h2>
-            <p className="text-base font-sansnarrow lg:text-lg ">
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-              Sou um desenvolvedor front end end end end end
-            </p>
+          <p className="text-base font-sansnarrow lg:text-base text-justify ">
+            Me chamo Victor Lopes, um apaixonado por tecnologia natural de Duque de Caxias, RJ.
+            Como desenvolvedor front-end, mergulho na interseção entre criatividade e tecnologia,
+            buscando constantemente aprimorar minhas habilidades. Como estudante de Análise e
+            Desenvolvimento de Sistemas, acredito que o futuro é o que construímos, e estou
+            determinado a moldá-lo com inovação. Este é o espaço onde compartilho minhas experiências,
+            projetos e descobertas na vasta área da tecnologia e desenvolvimento.
+            Convido você a explorar meu portfólio e conhecer mais sobre meu trabalho e paixões.
+            Juntos, podemos desbravar o mundo da tecnologia e criar um futuro empolgante e inspirador.
+            Fique à vontade para explorar!
+          </p>
           {/* <div className="flex font-sansnarrow flex-row mt-8">
             <TabButton
               selectTab={() => handleTabChange("educacao")}

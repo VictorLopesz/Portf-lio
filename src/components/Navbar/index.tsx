@@ -139,7 +139,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                
+
                 <br />
                 <br />
                 <hr />
@@ -153,7 +153,7 @@ const Navbar = () => {
                         <Link href={'https://github.com/VictorLopesz'}>
                             <FaGithubSquare className="m-1 text-[29px] active:text-[#000000] transition duration-200 ease-in-out" />
                         </Link>
- 
+
                         <Link href={'mailto:euvictor_h@hotmail.com'}>
                             <ImMail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out" />
                         </Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
                         <Link href={'https://t.me/pleasevictor'}>
                             <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </Link>
-                        
+
                         <Link href={'https://www.linkedin.com/in/lopesvictorh/'}>
                             <FaLinkedin className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </Link>
