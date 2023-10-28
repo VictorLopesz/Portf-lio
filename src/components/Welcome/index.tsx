@@ -42,7 +42,7 @@ const Welcome = () => {
                     </h1>
                     <br /><br />
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl font-roboto">
-                        <span className="font-semibold text-white">
+                        <span className="font-semibold text-white text-justify">
                             Seja bem-vindo ao meu portfólio!<br />
                         </span>
                         Aqui você conhecerá um pouco sobre mim e meu trabalho.<br />

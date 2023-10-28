@@ -2,6 +2,7 @@
 import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
 import TabButton from '../TabButton';
+import eu from '../../../public/assets/eu.jpeg';
 
 // const TAB_DATA = [
 //   {
@@ -23,6 +24,8 @@ import TabButton from '../TabButton';
 
 function AboutMe() {
 
+ 
+
   // const [tab, setTab] = useState("educação");
   // const [isPendent, startTransition] = useTransition();
 
@@ -35,18 +38,18 @@ function AboutMe() {
   // };
 
   return (
-    <section className="text-white pt-28">
+    <section id="aboutme" className="text-white pt-28">
 
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          src="/"
+          src={eu}
           alt={'me'}
           width={500}
           height={500}
         />
         <div>
-          <h2 className="font-sansnarrow text-[40px] font-bold text-white mb-4 uppercase">Sobre Mim...</h2>
-          <p className="text-base font-sansnarrow lg:text-base text-justify ">
+          <h2 className="font-sansnarrow text-[40px] font-bold mb-4 uppercase text-[#bb9e70]">Sobre Mim...</h2>
+          <p className="text-lg font-sansnarrow lg:text-base text-justify ">
             Me chamo Victor Lopes, um apaixonado por tecnologia natural de Duque de Caxias, RJ.
             Como desenvolvedor front-end, mergulho na interseção entre criatividade e tecnologia,
             buscando constantemente aprimorar minhas habilidades. Como estudante de Análise e

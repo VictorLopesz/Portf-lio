@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import react, { useState } from 'react';
+import react, { useState, useCallback, useEffect } from 'react';
 import { BiBookBookmark, BiSolidMessageRounded } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
 import { GiHamburgerMenu, GiSkills } from 'react-icons/gi';
@@ -11,18 +11,29 @@ import { ImMail } from 'react-icons/im';
 import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
 
 
-
-
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [color, setColor] = useState(false)
 
+    const changeColor = () => {
+      if (window.scrollY >= 7) {
+        setColor(true)
+      } else {
+        setColor(false)
+      }
+    }
+  
+    window.addEventListener('scroll', changeColor)
 
     const handleNav = () => {
         setMenuOpen(!menuOpen);
     }
 
     return (
-        <nav className="fixed w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow ">
+        <nav className={` ${color ? 'bg-[#3a311de1] backdrop-blur-md transition duration-150 ease-in' 
+        : 
+        'g-[#3a311de1] backdrop-blur-md transition duration-300 ease-out'} 
+        fixed w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}>
             <div className="flex justify-between items-center h-full px-4">
                 <Link href='/'>
                     <Image
@@ -37,7 +48,8 @@ const Navbar = () => {
 
                 <div className="hidden sm:flex">
                     <ul className="hidden sm:flex text-sm mr-52 mt-8">
-                        <Link href="/">
+                        <Link href={"/"}
+                        >
                             <li className=" text-white  p-2 uppercase py-2
                             md:px-6 text-center 
                              text-bold

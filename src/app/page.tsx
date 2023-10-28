@@ -21,8 +21,10 @@ export default function Home() {
           <Welcome />
          {/* falta uma foto melhor minha */}
         {/* adicionar o currículo para download */}
-          <AboutMe />
         </div>
+          <div className="container mx-auto py-4 w-[70%]">
+          <AboutMe />
+          </div>
 
 
       </div>
