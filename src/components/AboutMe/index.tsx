@@ -4,39 +4,8 @@ import Image from 'next/image';
 import TabButton from '../TabButton';
 import eu from '../../../public/assets/eu.jpeg';
 
-// const TAB_DATA = [
-//   {
-//     title: "educação",
-//     id: "educação",
-//     content: (
-//       <ul className="font-sansnarrow">
-//         <li>HTML</li>
-//         <li>CSS</li>
-//         <li>Tailwind CSS</li>
-//         <li>JavaScript</li>
-//         <li>React.Js</li>
-//         <li>Next.Js</li>
-//         <li>MySQL</li>
-//       </ul>
-//     )
-//   }
-// ]
 
 function AboutMe() {
-
- 
-
-  // const [tab, setTab] = useState("educação");
-  // const [isPendent, startTransition] = useTransition();
-
-  // const handleTabChange = (id: any) => {
-  //   if (typeof startTransition === 'function') {
-  //     startTransition(() => {
-  //       setTab(id);
-  //     });
-  //   }
-  // };
-
   return (
     <section id="sobremim" className="text-white pt-28">
 
@@ -60,20 +29,6 @@ function AboutMe() {
             Juntos, podemos desbravar o mundo da tecnologia e criar um futuro empolgante e inspirador.
             Fique à vontade para explorar!
           </p>
-          {/* <div className="flex font-sansnarrow flex-row mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("educacao")}
-              active={tab === "educacao"}
-            >{" "}
-              Educação{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("profissional")}
-              active={tab === "profissional"}
-            >{" "}
-              Profissional{" "}
-            </TabButton>
-          </div> */}
         </div>
       </div>
     </section>

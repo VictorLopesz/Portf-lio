@@ -1,10 +1,10 @@
 'use client'
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Image from 'next/image';
 import react, { useState, useCallback, useEffect } from 'react';
-import { BiBookBookmark, BiSolidMessageRounded } from 'react-icons/bi';
+import { BiBookBookmark, BiBrain } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
-import { GiHamburgerMenu, GiSkills } from 'react-icons/gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
 import { ImMail } from 'react-icons/im';
@@ -141,7 +141,7 @@ const Navbar = () => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
-                                <GiSkills className="m-2" /> Skills
+                                <BiBrain className="m-2" /> Skills
                             </li>
                         </a>
                         <a href="/">
