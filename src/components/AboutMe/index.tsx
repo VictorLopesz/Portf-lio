@@ -31,6 +31,8 @@ function AboutMe() {
           </p>
         </div>
       </div>
+      <br/>
+      <br/>
     </section>
   )
 }

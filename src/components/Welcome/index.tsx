@@ -154,8 +154,6 @@ const Welcome = () => {
 
             </div>
             <br />
-            <br />
-            <br />
         </>
     )
 };
