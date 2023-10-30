@@ -38,7 +38,7 @@ function AboutMe() {
   // };
 
   return (
-    <section id="aboutme" className="text-white pt-28">
+    <section id="sobremim" className="text-white pt-28">
 
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
