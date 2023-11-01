@@ -6,7 +6,7 @@ import TabButton from '../TabButton';
 
 export default function Skills() {
 
-  const [tab, setTab] = useState('skills');
+  const [tab, setTab] = useState("HTMLCSS");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id: any) => {
@@ -17,57 +17,53 @@ export default function Skills() {
 
   return (
     <>
-      <div className="flex items-center justify-center text-white">
-        <div className="flex flex-row mt-8 uppercase font-sansnarrow">
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('HTMLCSS')} active={tab === 'HTMLCSS'}>
-                HTML/CSS {" "}
-              </TabButton>
-            </span>
-          </div>
+      <div className="flex items-center justify-center text-white py-8 px-4 xl:gap-5 sm:py-16 xl:px-16 font-sansnarrow">
+       
+        <div className="flex flex-row mt-8">
+          <TabButton
+           selectTab={() => handleTabChange("HTMLCSS")}
+            active={tab === "HTMLCSS"}
+          >
+            {" "}
+            HTML / CSS {" "}
+          </TabButton>
 
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('Tailwindcss')} active={tab === 'Tailwindcss'}>
-                Tailwind Css {" "}
-              </TabButton>
-            </span>
-          </div>
+          <TabButton 
+          selectTab={() => handleTabChange('Tailwindcss')}
+          active={tab === 'Tailwindcss'}
+          >
+            {" "}
+            Tailwind CSS {" "}
+          </TabButton>
 
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('reactjs')} active={tab === 'reactjs'}>
-                React.Js {" "}
-              </TabButton>
-            </span>
-          </div>
+          <TabButton selectTab={() => handleTabChange('reactjs')}
+          active={tab === 'reactjs'}
+          >
+            {" "}
+            React.Js {" "}
+          </TabButton>
 
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('nextjs')} active={tab === 'nextjs'}>
-                Next.Js {" "}
-              </TabButton>
-            </span>
-          </div>
+          <TabButton selectTab={() => handleTabChange('nextjs')}
+          active={tab === 'nextjs'}
+          >
+            {" "}
+            Next.Js {" "}
+          </TabButton>
 
+          <TabButton selectTab={() => handleTabChange('php')}
+          active={tab === 'php'}
+          >
+            {" "}
+            PHP {" "}
+          </TabButton>
 
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('php')} active={tab === 'php'}>
-                PHP {" "}
-              </TabButton>
-            </span>
-          </div>
-
-          <div>
-            <span className="">
-              <TabButton setTab={() => handleTabChange('sql')} active={tab === 'sql'}>
-                SQL {" "}
-              </TabButton>
-            </span>
-          </div>
-
+          <TabButton selectTab={() => handleTabChange('sql')}
+          active={tab === 'sql'}
+          >
+            {" "}
+            SQL {" "}
+          </TabButton>
+      
         </div>
       </div>
     </>
