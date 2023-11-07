@@ -68,14 +68,20 @@ const Navbar = () => {
                              active:text-[#bebdc9e1] 
                              transition duration-500 ease-in-out">Sobre mim</li>
                         </Link>
-                        <a href="/">
+                        <Link
+                            to="skills"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            offset={50}
+                        >
                             <li className="pb-2 text-white  p-2 uppercase py-2
                             md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">Skills</li>
-                        </a>
+                            text-bold
+                            hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
+                            active:text-[#bebdc9e1] 
+                            transition duration-500 ease-in-out">Skills</li>
+                        </Link>
                         <a href="/">
                             <li className="pb-2 text-white  p-2 uppercase py-2
                             md:px-6 text-center 
