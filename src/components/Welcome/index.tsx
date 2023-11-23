@@ -24,7 +24,7 @@ const Welcome = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-white mb-4 text-3x1 sm:text-6x1 lg:text-4xl font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#574d3d] to-[#E0C997]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9e7f4c] to-[#c3a971]">
                                 Olá, eu sou 
                                 <p>
                                     {" "}
@@ -37,26 +37,26 @@ const Welcome = () => {
                                     1000,
                                     'Desenvolvedor front-end',
                                     1000,
+                                    'Desenvolvedor back-end',
+                                    1000,
                                 ]}
                                 wrapper="span"
                                 speed={50}
                                 repeat={Infinity}
                             />
                         </h1>
-                        <br /><br />
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl font-roboto">
                             <span className="font-semibold text-white text-justify">
                                 Seja bem-vindo ao meu portfólio!<br />
                             </span>
                             Aqui você conhecerá um pouco sobre mim e meu trabalho.
-                            <br />
                             Sinta-se à vontade.
                         </p>
                         <div className="flex items-center justify-center">
                             <button className="
                         p-4 px-5 py-3 rounded-lg uppercase
-                        bg-gradient-to-br from-[#44361d]
-                        to-[#E0C997] font-sansnarrow 
+                        bg-gradient-to-br from-[#aa8441]
+                        to-[#c7a761] font-sansnarrow 
                         font-semibold hover:bg-gradient-to-br
                          hover:from-[#44361d] hover:to-[#8b6e3c]
                          text-[#1c1a1a] ease-in duration-300
@@ -144,8 +144,7 @@ const Welcome = () => {
                                     <FaWhatsappSquare
                                         className="
                                 m-1 text-[29px] hover:text-[#25D366]
-                                 transition duration-200 ease-in-out
-                                 "/>
+                                 transition duration-200 ease-in-out"/>
                                 </Link>
                             </>
                         </div>

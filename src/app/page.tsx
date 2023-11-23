@@ -4,9 +4,6 @@ import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import AboutMe from '@/components/AboutMe';
 import Skills from "@/components/Skills";
-import Image from "next/image";
-
-
 
 export default function Home() {
   return (
@@ -14,7 +11,7 @@ export default function Home() {
       <Navbar />
       <div className="
       pt-28 flex min-h-screen
-      flex-col bg-gradient-to-r from-[#142742] to-[#16304E]
+      flex-col bg-gradient-to-r from-[#1B1B1B] to-[#000000]
       ">
 
         <div className="container mx-auto py-4 w-[70%]">

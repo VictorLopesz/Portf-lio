@@ -13,7 +13,7 @@ import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [color, setColor] = useState(false)
+    const [color, setColor] = useState(false);
 
     const changeColor = () => {
         if (window.scrollY >= 7) {
@@ -30,7 +30,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className={` ${color ? 'bg-[#3a311de1] backdrop-blur-md transition duration-150 ease-in'
+        <nav className={` ${color ? 'bg-[#4A3B1F] backdrop-blur-md transition duration-150 ease-in'
             :
             'g-[#3a311de1] backdrop-blur-md transition duration-300 ease-out'} 
         fixed w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}>
@@ -109,17 +109,17 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer">
-                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#8D6D3A] active:text-[#382b18]" />
+                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#f3be69] active:text-[#5d4d34]" />
                 </div>
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen bg-gradient-to-r from-[#151d29] to-[#204168] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen bg-[#4A3B1F] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
                     "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
             }
             >
                 <div className="flex w-full items-center justify-end">
-                    <div onClick={handleNav} className="cursor-pointer text-[#8D6D3A] active:text-[#382b18]">
+                    <div onClick={handleNav} className="cursor-pointer text-[#f3be69] active:text-[#5d4d34]">
                         <CgCloseR size={25} />
                     </div>
                 </div>

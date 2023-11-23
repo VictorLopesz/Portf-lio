@@ -19,7 +19,7 @@ function AboutMe() {
           <h2 className="font-sansnarrow text-[40px] font-bold mb-4 uppercase text-[#bb9e70]">Sobre Mim...</h2>
           <p className="text-lg font-sansnarrow lg:text-base text-justify ">
             Me chamo Victor Lopes, um apaixonado por tecnologia natural de Duque de Caxias, RJ.
-            Como desenvolvedor front-end, mergulho na interseção entre criatividade e tecnologia,
+            Como desenvolvedor, mergulho na interseção entre criatividade e tecnologia,
             buscando constantemente aprimorar minhas habilidades. Como estudante de Análise e
             Desenvolvimento de Sistemas, acredito que o futuro é o que construímos, e estou
             determinado a moldá-lo com inovação. Este é o espaço onde compartilho minhas experiências,
