@@ -164,13 +164,6 @@ const Navbar = () => {
                                 <BiBookBookmark className="m-2" /> Cursos
                             </li>
                         </a>
-                        {/* <a href="/">
-                            <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer hover:text-[#8d6096] active:text-[#8D6D3A]"
-                            >
-                               <BiSolidMessageRounded className="m-2"/> Contato
-                            </li>
-                        </a> */}
 
                     </ul>
                 </div>

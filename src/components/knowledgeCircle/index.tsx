@@ -1,13 +1,15 @@
-'use client'
-import React from 'react';
+// components/KnowledgeCircle.js
 
+import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-const KnowledgeCircle = ({ level }:any) => {
+const KnowledgeCircle = ({ level }: any) => {
   const circleRadius = 50;
   const strokeWidth = 5;
   const circumference = 2 * Math.PI * circleRadius;
   const offset = ((100 - level) / 100) * circumference;
+
+  const isSmallScreen = window.innerWidth <= 600; // Defina o valor desejado para a mudança de exibição
 
   const colorSpring = useSpring({
     from: { strokeDashoffset: circumference, stroke: '#3498db' },
@@ -20,29 +22,41 @@ const KnowledgeCircle = ({ level }:any) => {
 
   return (
     <div className="relative">
-      <svg width={circleRadius * 2} height={circleRadius * 2} className="knowledge-circle">
-        <circle
-          cx={circleRadius}
-          cy={circleRadius}
-          r={circleRadius - strokeWidth / 2}
-          fill="none"
-          stroke="#ddd"
-          strokeWidth={strokeWidth}
-        />
+      {isSmallScreen ? (
+        <div className="bar-container">
+          <animated.div
+            className="bar"
+            style={{
+              width: `${level}%`,
+              backgroundColor: colorSpring.stroke,
+            }}
+          />
+        </div>
+      ) : (
+        <svg width={circleRadius * 2} height={circleRadius * 2} className="knowledge-circle">
+          <circle
+            cx={circleRadius}
+            cy={circleRadius}
+            r={circleRadius - strokeWidth / 2}
+            fill="none"
+            stroke="#ddd"
+            strokeWidth={strokeWidth}
+          />
 
-        <animated.circle
-          cx={circleRadius}
-          cy={circleRadius}
-          r={circleRadius - strokeWidth / 2}
-          fill="none"
-          stroke={colorSpring.stroke}
-          strokeWidth={strokeWidth}
-          strokeDasharray={circumference}
-          strokeDashoffset={colorSpring.strokeDashoffset}
-        />
-      </svg>
+          <animated.circle
+            cx={circleRadius}
+            cy={circleRadius}
+            r={circleRadius - strokeWidth / 2}
+            fill="none"
+            stroke={colorSpring.stroke}
+            strokeWidth={strokeWidth}
+            strokeDasharray={circumference}
+            strokeDashoffset={colorSpring.strokeDashoffset}
+          />
+        </svg>
+      )}
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-lg font-bold text-gray-700">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-lg font-bold text-gray-100">
         {level}%
       </div>
     </div>
