@@ -28,11 +28,6 @@ export default function Home() {
           {/* falta uma foto melhor minha */}
           <AboutMe />
         </div>
-
-        <div>
-          <Skills />
-        </div>
-
       </div>
     </>
   )
