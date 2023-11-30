@@ -2,7 +2,6 @@
 import React, { useState, useTransition } from 'react';
 import TabButton from '../TabButton';
 import html from '../../../public/assets/html.png';
-import KnowledgeCircle from '../knowledgeCircle';
 
 
 const DATA_SKILLS = [
@@ -13,7 +12,7 @@ const DATA_SKILLS = [
       <div className="flex items-center justify-center w-full bg-[#4744446b] rounded-sm ">
         <div className=" p-2 shadow-lg justify-center items-center grid grid-cols-1 lg:grid-cols-3">
           <div className="justify-center items-center flex">
-            <img src={html.src} alt="HTML" className="w-40 p-3"/>
+            <img src={html.src} alt="HTML" className="w-40 p-3" />
           </div>
           <div className="text-justify">
             <p>HTML, sigla para HyperText Markup Language, é a linguagem fundamental da web.
@@ -25,11 +24,11 @@ const DATA_SKILLS = [
               Sua simplicidade e importância na construção de sites me proporcionaram uma base sólida para aprofundar
               meus conhecimentos na área.</p>
           </div>
-          <div className="justify-center items-center flex p-3">
-            <span className="text-xs font-semibold uppercase text-[#fff]">
-              nível de conhecimento: 
+          <div className="text-xs font-semibold uppercase text-[#fff] justify-center items-center flex p-3">
+            <span>Nível de Conhecimento
+              <br />
+              <br />
             </span>
-            <KnowledgeCircle level={70}/>
           </div>
         </div>
       </div>

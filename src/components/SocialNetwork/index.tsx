@@ -14,7 +14,14 @@ export default function socialNetwork() {
         <div>
 
             {isDesktopOrLaptop && (
-                <div className="text-white hover:text-black fixed hover:bg-[#b8b8b8] hover:transition transition hover:duration-300 duration-300 hover:ease-in-out ease-in-out p-2 rounded-r-lg top-1/2 left-0 transform -translate-y-1/2 flex flex-col items-center">
+                <div className="
+                text-white hover:text-black fixed
+                 hover:bg-[#b8b8b8] hover:transition
+                  transition hover:duration-150 duration-150
+                   hover:ease-in-out ease-in-out p-2
+                    rounded-r-lg top-1/2 left-0 transform
+                     -translate-y-1/2 flex flex-col items-center
+                     ">
                     <>
                         <div>
                             <Link
@@ -25,7 +32,7 @@ export default function socialNetwork() {
                                 <FaGithubSquare size={25}
                                     className="
                             m-1 text-[29px] hover:text-[#777777] 
-                             hover:transition transition hover:duration-500 duration-300 hover:ease-in-out ease-in-out "
+                             hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out "
                                 />
                             </Link>
                         </div>
@@ -38,7 +45,7 @@ export default function socialNetwork() {
                                 <RiMailFill size={25}
                                     className="
                 m-1 hover:text-[#BD1D1B]
-                 hover:transition transition hover:duration-300 duration-300 hover:ease-in-out ease-in-out 
+                 hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
             "/>
                             </Link>
                         </div>
@@ -51,7 +58,7 @@ export default function socialNetwork() {
                                 <FaTelegram size={25}
                                     className="
                 m-1 hover:text-[#519dbe]
-                 hover:transition transition hover:duration-300 duration-300 hover:ease-in-out ease-in-out 
+                 hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
             "/>
                             </Link>
                         </div>
@@ -64,7 +71,7 @@ export default function socialNetwork() {
                                 <FaLinkedin size={25}
                                     className="
             m-1 text-[28px] hover:text-[#0A66C2]
-             hover:transition transition hover:duration-300 duration-300 hover:ease-in-out ease-in-out 
+             hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
              "/>
                             </Link>
                         </div>
@@ -78,7 +85,7 @@ export default function socialNetwork() {
                                 <FaWhatsappSquare size={25}
                                     className="
             m-1 text-[29px] hover:text-[#278b4c]
-             hover:transition transition hover:duration-300 duration-300 hover:ease-in-out ease-in-out "/>
+             hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out "/>
                             </Link>
                         </div>
                     </>
