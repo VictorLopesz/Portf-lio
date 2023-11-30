@@ -5,30 +5,18 @@ import eu from '../../../public/assets/eu.jpeg';
 import TabButton from '../TabButton';
 
 const ABOUT_ME = [
-  {
-    title: "SobreMim",
-    id: "SobreMim",
-    content: 
-    <div className="flex items-center justify-center w-full">
-    <p className="text-lg font-sansnarrow lg:text-base text-justify ">
-      Me chamo Victor Lopes, um apaixonado por tecnologia natural de Duque de Caxias, RJ.
-      Como desenvolvedor, mergulho na interseção entre criatividade e tecnologia,
-      buscando constantemente aprimorar minhas habilidades. Como estudante de Análise e
-      Desenvolvimento de Sistemas, acredito que o futuro é o que construímos, e estou
-      determinado a moldá-lo com inovação. Este é o espaço onde compartilho minhas experiências,
-      projetos e descobertas na vasta área da tecnologia e desenvolvimento.
-      Convido você a explorar meu portfólio e conhecer mais sobre meu trabalho e paixões.
-      Juntos, podemos desbravar o mundo da tecnologia e criar um futuro empolgante e inspirador.
-      Fique à vontade para explorar!
-    </p>
-  </div>
-  },
+  // {
+  //   title: "SobreMim",
+  //   id: "SobreMim",
+  //   content: 
+  // },
   {
     title: "Linguagens",
     id: "Linguagens",
     content:
-    <div>
-      <div className="grid grid-cols-">
+    <div className="grid grid-cols-3">
+      <div>
+      <div>
       <span className="">Programação:</span>
     <ul>
       <li>HTML5</li>
@@ -38,6 +26,7 @@ const ABOUT_ME = [
       <li>PHP</li>
     </ul>
       </div>
+      </div>
       <div>
 <span>Banco de Dados:</span>
     <ul>
@@ -45,12 +34,14 @@ const ABOUT_ME = [
       <li>Oracle Database</li>
     </ul>
       </div>
+    <div>
       <div>
         <span>Versionamento:</span>
         <ul>
           <li>Git</li>
           <li> <a href="#">GitHub</a></li>
         </ul>
+    </div>
       </div>
     </div>
   },
@@ -81,7 +72,7 @@ const ABOUT_ME = [
 
 export default function AboutMe() {
 
-const [tab, setTab] = useState("SobreMim");
+const [tab, setTab] = useState("Linguagens");
 const [isPending, startTransition] = useTransition();
 
 const handleTabChange = (id:any) => {
@@ -101,23 +92,38 @@ const handleTabChange = (id:any) => {
           height={500}
         />
         <div>
+
+        <div className="flex items-center justify-center w-full">
+    <p className="text-lg font-sansnarrow lg:text-base text-justify ">
+      Me chamo Victor Lopes, um apaixonado por tecnologia natural de Duque de Caxias, RJ.
+      Como desenvolvedor, mergulho na interseção entre criatividade e tecnologia,
+      buscando constantemente aprimorar minhas habilidades. Como estudante de Análise e
+      Desenvolvimento de Sistemas, acredito que o futuro é o que construímos, e estou
+      determinado a moldá-lo com inovação. Este é o espaço onde compartilho minhas experiências,
+      projetos e descobertas na vasta área da tecnologia e desenvolvimento.
+      Convido você a explorar meu portfólio e conhecer mais sobre meu trabalho e paixões.
+      Juntos, podemos desbravar o mundo da tecnologia e criar um futuro empolgante e inspirador.
+      Fique à vontade para explorar!
+    </p>
+  </div>
+
           <div id="AboutMe" className="items-center justify-center text-white py-8 px-4 xl:gap-5 sm:py-16 xl:px-16 font-sansnarrow">
           <div className="mt-8 flex justify-center items-center">
-            <TabButton
+            {/* <TabButton
             selectTab={() => handleTabChange("SobreMim")}
             active={tab === "SobreMim"}
 >
 
             {" "}
   Sobre Mim <br/> {" "}
-</TabButton>
+</TabButton> */}
 
 <TabButton
     selectTab={() => handleTabChange("Linguagens")}
     active={tab === "Linguagens"}
 >
     {" "}
-    Linguagens <br/>  {" "}
+    <span className="text-[#D1BA89] uppercase">Linguagens</span> <br/>  {" "}
     
 </TabButton>
 
@@ -126,7 +132,7 @@ const handleTabChange = (id:any) => {
     active={tab === "QA/Tester"}
 >
   {" "}
-  QA/Tester <br/>  {" "}
+  <span className="text-[#D1BA89] uppercase">QA/Tester</span> <br/>  {" "}
     
 </TabButton>
 
