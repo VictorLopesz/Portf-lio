@@ -1,7 +1,7 @@
 'use client'
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import react, { useState, useCallback, useEffect } from 'react';
+import react, { useState } from 'react';
 import { BiBookBookmark, BiBrain } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -30,30 +30,36 @@ const Navbar = () => {
     }
 
     return (
-        <nav className={` ${color ? 'bg-[#4A3B1F] backdrop-blur-md transition duration-150 ease-in'
+        <nav id="nav" className={` ${color ? 'bg-[#4A3B1F] fixed z-50 backdrop-blur-md transition duration-150 ease-in'
             :
             'g-[#3a311de1] backdrop-blur-md transition duration-300 ease-out'} 
-        fixed w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}>
+                    fixed z-50 w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}
+        >
             <div className="flex justify-between items-center h-full px-4">
-                <Link href='/'
-                    to="início"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={50}
-                >
                     <Image
                         src={logotipo.src}
                         alt="logo"
                         width="120"
                         height="75"
-                        className="cursor-pointer"
                         priority
                     />
-                </Link>
 
                 <div className="hidden sm:flex">
                     <ul className="hidden sm:flex text-sm mr-52 mt-8">
+                        <Link
+                            to="inicio"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            offset={50}
+                        >
+                            <li className=" text-white  p-2 uppercase py-2
+                            md:px-6 text-center 
+                             text-bold cursor-pointer
+                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
+                             active:text-[#bebdc9e1] 
+                             transition duration-500 ease-in-out">Início</li>
+                        </Link>
                         <Link
                             to="sobremim"
                             smooth={true}
@@ -84,14 +90,6 @@ const Navbar = () => {
                              active:text-[#bebdc9e1] 
                              transition duration-500 ease-in-out">Cursos</li>
                         </a>
-                        <a href="/">
-                            <li className="pb-2 text-white  p-2 uppercase py-2
-                            md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">Contato</li>
-                        </a>
                     </ul>
                 </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer">
@@ -116,6 +114,19 @@ const Navbar = () => {
                     className="cursor-pointer" />
                 <div className="flex-col text-white text-sm uppercase">
                     <ul>
+                        <Link href="/"
+                            to="inicio"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            offset={50}
+                        >
+                            <li onClick={() => setMenuOpen(false)}
+                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                            >
+                                <BsFillPersonVcardFill className="m-2" /> Início
+                            </li>
+                        </Link>
                         <Link href="/"
                             to="sobremim"
                             smooth={true}
@@ -143,7 +154,6 @@ const Navbar = () => {
                                 <BiBookBookmark className="m-2" /> Cursos
                             </li>
                         </a>
-
                     </ul>
                 </div>
 
@@ -181,7 +191,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 

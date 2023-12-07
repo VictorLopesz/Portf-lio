@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import AboutMe from '@/components/AboutMe';
-import Skills from "@/components/Skills";
 import SocialNetwork from '../components/SocialNetwork';
 
 
