@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import AboutMe from '@/components/AboutMe';
 import SocialNetwork from '../components/SocialNetwork';
+import Projects from "@/components/Projetcs";
 
 
 export default function Home() {
@@ -23,9 +24,16 @@ export default function Home() {
         <div>
           <SocialNetwork />
         </div>
+        <br />
+        <br />
+        <br />
         <div className="container mx-auto py-4 w-[70%]">
           {/* falta uma foto melhor minha */}
           <AboutMe />
+        </div>
+        <br />
+        <div>
+          <Projects />
         </div>
       </div>
     </>

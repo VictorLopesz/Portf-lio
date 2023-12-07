@@ -36,13 +36,13 @@ const Navbar = () => {
                     fixed z-50 w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}
         >
             <div className="flex justify-between items-center h-full px-4">
-                    <Image
-                        src={logotipo.src}
-                        alt="logo"
-                        width="120"
-                        height="75"
-                        priority
-                    />
+                <Image
+                    src={logotipo.src}
+                    alt="logo"
+                    width="120"
+                    height="75"
+                    priority
+                />
 
                 <div className="hidden sm:flex">
                     <ul className="hidden sm:flex text-sm mr-52 mt-8">
@@ -75,12 +75,20 @@ const Navbar = () => {
                              transition duration-500 ease-in-out">Sobre mim</li>
                         </Link>
                         <a href="/">
-                            <li className="pb-2 text-white  p-2 uppercase py-2
+                            <Link
+                                to="projetos"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                offset={50}
+                            >
+                                <li className="pb-2 text-white  p-2 uppercase py-2
                             md:px-6 text-center 
                              text-bold
                              hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
                              active:text-[#bebdc9e1] 
                              transition duration-500 ease-in-out">projetos</li>
+                            </Link>
                         </a>
                         <a href="/">
                             <li className="pb-2 text-white  p-2 uppercase py-2
@@ -140,13 +148,19 @@ const Navbar = () => {
                                 <BsFillPersonVcardFill className="m-2" /> Sobre mim
                             </li>
                         </Link>
-                        <a href="/">
+                        <Link href="/"
+                            to="projetos"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            offset={50}
+                        >
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
                             >
                                 <BsPersonWorkspace className="m-2" /> Projetos
                             </li>
-                        </a>
+                        </Link>
                         <a href="/">
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
