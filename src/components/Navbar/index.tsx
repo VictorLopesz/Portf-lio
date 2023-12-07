@@ -92,18 +92,18 @@ const Navbar = () => {
                         </a>
                     </ul>
                 </div>
-                <div onClick={handleNav} className="md:hidden cursor-pointer">
-                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#f3be69] active:text-[#5d4d34]" />
+                <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
+                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
                 </div>
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen bg-[#4A3B1F] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen text-white bg-[#000000] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
                     "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
             }
             >
                 <div className="flex w-full items-center justify-end">
-                    <div onClick={handleNav} className="cursor-pointer text-[#f3be69] active:text-[#5d4d34]">
+                    <div onClick={handleNav} className="cursor-pointer text-[#a09f9f] active:text-[#c35555]">
                         <CgCloseR size={25} />
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const Navbar = () => {
                     src={logotipo}
                     alt="logot"
                     className="cursor-pointer" />
-                <div className="flex-col text-white text-sm uppercase">
+                <div className="flex-col text-white text-sm">
                     <ul>
                         <Link href="/"
                             to="inicio"
@@ -122,7 +122,7 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BsFillPersonVcardFill className="m-2" /> Início
                             </li>
@@ -135,7 +135,7 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BsFillPersonVcardFill className="m-2" /> Sobre mim
                             </li>
@@ -148,14 +148,14 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#535353]"
                             >
                                 <BsPersonWorkspace className="m-2" /> Projetos
                             </li>
                         </Link>
                         <a href="/">
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BiBookBookmark className="m-2" /> Cursos
                             </li>
@@ -174,7 +174,7 @@ const Navbar = () => {
                 <div className="items-center flex justify-center">
                     <div className="flex items-center text-white mt-5 text-2xl">
                         <a href={'https://github.com/VictorLopesz'}>
-                            <FaGithubSquare className="m-1 text-[29px] active:text-[#000000] transition duration-200 ease-in-out" />
+                            <FaGithubSquare className="m-1 text-[29px] active:text-[#4a4949] transition duration-200 ease-in-out" />
                         </a>
 
                         <a href={'mailto:euvictor_h@hotmail.com'}>
