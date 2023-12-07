@@ -30,22 +30,14 @@ const Navbar = () => {
     }
 
     return (
-        <nav id="nav" className={` ${color ? 'bg-[#4A3B1F] fixed z-50 backdrop-blur-md transition duration-150 ease-in'
+        <nav id="nav" className={` ${color ? 'bg-[#000000] text-white fixed z-50 transition duration-150 ease-in'
             :
-            'g-[#3a311de1] backdrop-blur-md transition duration-300 ease-out'} 
-                    fixed z-50 w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}
+            'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
+                    fixed z-50 w-full h-12 font-sansnarrow`}
         >
-            <div className="flex justify-between items-center h-full px-4">
-                <Image
-                    src={logotipo.src}
-                    alt="logo"
-                    width="120"
-                    height="75"
-                    priority
-                />
-
-                <div className="hidden sm:flex">
-                    <ul className="hidden sm:flex text-sm mr-52 mt-8">
+            <div className="flex justify-evenly items-center h-full sm:flex">
+                <div className="flex w-full justify-center items-center">
+                    <ul className="hidden sm:flex text-sm">
                         <Link
                             to="inicio"
                             smooth={true}
@@ -53,11 +45,11 @@ const Navbar = () => {
                             spy={true}
                             offset={50}
                         >
-                            <li className=" text-white  p-2 uppercase py-2
+                            <li className=" p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
+                             hover:text-[#e8e7e5] hover:bg-[#91919187]
+                             active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Início</li>
                         </Link>
                         <Link
@@ -67,12 +59,12 @@ const Navbar = () => {
                             spy={true}
                             offset={50}
                         >
-                            <li className=" text-white  p-2 uppercase py-2
+                            <li className="p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">Sobre mim</li>
+                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             active:text-[#535353] active:bg-[#1818188e] 
+                             transition duration-500 ease-in-out">Sobre Mim</li>
                         </Link>
                         <a href="/">
                             <Link
@@ -82,20 +74,20 @@ const Navbar = () => {
                                 spy={true}
                                 offset={50}
                             >
-                                <li className="pb-2 text-white  p-2 uppercase py-2
+                                <li className="p-2
                             md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">projetos</li>
+                             text-bold cursor-pointer
+                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             active:text-[#535353] active:bg-[#1818188e] 
+                             transition duration-500 ease-in-out">Projetos</li>
                             </Link>
                         </a>
                         <a href="/">
-                            <li className="pb-2 text-white  p-2 uppercase py-2
+                            <li className="p-2
                             md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
+                             text-bold cursor-pointer
+                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Cursos</li>
                         </a>
                     </ul>

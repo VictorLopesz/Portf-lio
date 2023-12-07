@@ -14,9 +14,10 @@ export default function Home() {
       <Navbar />
       <div className="
       pt-28 flex min-h-screen
-      flex-col bg-gradient-to-r from-[#1B1B1B] to-[#000000]
+      flex-col bg-[#ededee]
       ">
-        <div className="container mx-auto py-4 w-[70%]">
+        {/* bg-gradient-to-r from-[#1B1B1B] to-[#000000] */}
+        <div className="container mx-auto py-4 max-w-[90%] bg-[#FFFFFF]">
           <Welcome />
           {/* falta colocar um avatar melhor e mais parecido comigo */}
           {/* adicionar o currículo para download */}
@@ -27,7 +28,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <div className="container mx-auto py-4 w-[70%]">
+        <div className="container mx-auto py-4 w-[70%] bg-[#000000]">
           {/* falta uma foto melhor minha */}
           <AboutMe />
         </div>
