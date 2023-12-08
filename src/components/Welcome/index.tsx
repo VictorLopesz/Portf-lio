@@ -65,11 +65,8 @@ const Welcome = () => {
                             >
                                 <button className="
                         p-4 px-5 py-3 rounded-lg uppercase
-                        bg-gradient-to-br from-[#6aabd9]
-                        to-[#233949] font-sansnarrow 
-                        font-semibold hover:bg-gradient-to-br
-                         hover:from-[#5e91b6] hover:to-[#8bb6d4]
-                         text-[#fff] transition ease-in duration-300
+                        bg-[#233949] font-sansnarrow 
+                        font-semibold text-[#fff] hover:text-[#c5c2c2]
                           active:bg-slate-800
                          ">
                                     download cv
@@ -81,8 +78,7 @@ const Welcome = () => {
 
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0 flex justify-evenly items-center max-w-screen-lg">
                         <Fade
-                            duration={2000}
-                            direction='up'
+                            duration={5000}
                         >
                             <div className=" bg-gradient-to-r from-[#8bb6d4] to-[#5e91b6] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
                                 <Image

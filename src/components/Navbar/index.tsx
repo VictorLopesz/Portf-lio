@@ -9,6 +9,7 @@ import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
 import { ImMail } from 'react-icons/im';
 import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
+import SocialNetwork from '../SocialNetwork';
 
 
 const Navbar = () => {
@@ -92,6 +93,9 @@ const Navbar = () => {
                         </a>
                     </ul>
                 </div>
+                    <div className="w-full justify-end items-center mr-10">
+                    <SocialNetwork />
+                    </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
                     <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
                 </div>

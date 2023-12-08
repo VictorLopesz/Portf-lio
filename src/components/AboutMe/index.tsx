@@ -66,7 +66,7 @@ const ABOUT_ME = [
     content:
       <div className="grid grid-cols-2 gap-x-6 gap-y-4 mt-4">
            <div className="">
-            <span className="text-[#d6c49d]">
+            <span className="text-[#7fabca]">
               Testes:
             </span>
             <ul>
@@ -75,7 +75,7 @@ const ABOUT_ME = [
             </ul>
           </div>
           <div>
-            <span className="text-[#d6c49d]">Ferramentas:</span>
+            <span className="text-[#7fabca]">Ferramentas:</span>
             <ul>
               <li>Postman</li>
               <li>Trello</li>
@@ -120,7 +120,7 @@ export default function AboutMe() {
                 direction="down"
                 duration={1000}
               >
-                <h1 className="text-[#CEB786] font-sansnarrow font-bold mb-2 text-2xl">Sobre Mim...</h1>
+                <h1 className="text-[#5e91b6] font-sansnarrow font-bold mb-2 text-2xl">Sobre Mim...</h1>
               </Fade>
               <Fade
                 direction="left"
