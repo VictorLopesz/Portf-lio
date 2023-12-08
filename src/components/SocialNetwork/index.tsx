@@ -1,9 +1,12 @@
 'use client';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { FaGithubSquare, FaTelegram, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
-import { RiMailFill } from "react-icons/ri";
 import Link from 'next/link';
+import { PiGithubLogoFill } from "react-icons/pi";
+import { IoIosMailUnread } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+
 
 export default function socialNetwork() {
     const isDesktopOrLaptop = useMediaQuery({
@@ -24,7 +27,7 @@ export default function socialNetwork() {
                                 href="https://github.com/VictorLopesz"
                                 target="_blank
                 ">
-                                <FaGithubSquare size={25}
+                                <PiGithubLogoFill size={20}
                                     className="
                             m-1 text-[29px] hover:text-[#777777] 
                              hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out "
@@ -37,7 +40,7 @@ export default function socialNetwork() {
                                 href="mailto:euvictor_h@hotmail.com"
                                 target="_blank
          ">
-                                <RiMailFill size={25}
+                                <IoIosMailUnread size={22}
                                     className="
                 m-1 hover:text-[#BD1D1B]
                  hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
@@ -50,24 +53,11 @@ export default function socialNetwork() {
                                 href="https://t.me/pleasevictor"
                                 target="_blank"
                             >
-                                <FaTelegram size={25}
+                                <FaTelegramPlane size={22}
                                     className="
                 m-1 hover:text-[#519dbe]
                  hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
             "/>
-                            </Link>
-                        </div>
-                        <div>
-                            <Link
-                                rel="stylesheet"
-                                href="https://www.linkedin.com/in/lopesvictorh/"
-                                target="_blan
-            k">
-                                <FaLinkedin size={25}
-                                    className="
-            m-1 text-[28px] hover:text-[#0A66C2]
-             hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
-             "/>
                             </Link>
                         </div>
                         <div>
@@ -77,10 +67,23 @@ export default function socialNetwork() {
                                 href="https://wa.me/5521980260633"
                                 target="_blank
                             ">
-                                <FaWhatsappSquare size={25}
+                                <FaWhatsapp size={21}
                                     className="
             m-1 text-[29px] hover:text-[#278b4c]
              hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out "/>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link
+                                rel="stylesheet"
+                                href="https://www.linkedin.com/in/lopesvictorh/"
+                                target="_blan
+            k">
+                                <FaLinkedinIn size={21}
+                                    className="
+            m-1 text-[28px] hover:text-[#0A66C2]
+             hover:transition transition hover:duration-150 duration-150 hover:ease-in-out ease-in-out 
+             "/>
                             </Link>
                         </div>
                     </>

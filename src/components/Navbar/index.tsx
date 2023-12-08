@@ -3,13 +3,17 @@ import { Link } from 'react-scroll';
 import Image from 'next/image';
 import react, { useState } from 'react';
 import { BiBookBookmark, BiBrain } from 'react-icons/bi';
-import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
+import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
-import { ImMail } from 'react-icons/im';
-import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import SocialNetwork from '../SocialNetwork';
+import { PiGithubLogoFill } from "react-icons/pi";
+import { IoIosMailUnread } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
+
+
 
 
 const Navbar = () => {
@@ -31,10 +35,10 @@ const Navbar = () => {
     }
 
     return (
-        <nav id="nav" className={` ${color ? 'bg-[#000000] text-white fixed z-50 transition duration-150 ease-in'
+        <nav id="nav" className={` ${color ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
             :
             'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
-                    fixed z-50 w-full h-12 font-sansnarrow`}
+                    fixed z-50 w-full h-12 font-semibold text-3xl font-barlow`}
         >
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <div className="flex w-full justify-center items-center">
@@ -44,7 +48,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-120}
                         >
                             <li className=" p-2
                             md:px-6 text-center 
@@ -58,7 +62,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-30}
                         >
                             <li className="p-2
                             md:px-6 text-center 
@@ -73,7 +77,7 @@ const Navbar = () => {
                                 smooth={true}
                                 duration={500}
                                 spy={true}
-                                offset={50}
+                                // offset={}
                             >
                                 <li className="p-2
                             md:px-6 text-center 
@@ -172,30 +176,30 @@ const Navbar = () => {
                 <hr />
                 <br />
 
-                <div className="flex items-center justify-center w-full text-white font-sansnarrow py-1 pt-10">
+                <div className="flex items-center justify-center w-full text-white font-NotoKawi py-1 pt-10">
                     <span className="text-sm ">CONTATO</span>
                 </div>
                 <div className="items-center flex justify-center">
                     <div className="flex items-center text-white mt-5 text-2xl">
                         <a href={'https://github.com/VictorLopesz'}>
-                            <FaGithubSquare className="m-1 text-[29px] active:text-[#4a4949] transition duration-200 ease-in-out" />
+                            <PiGithubLogoFill className="m-1 text-[28px] active:text-[#4a4949] transition duration-200 ease-in-out" />
                         </a>
 
                         <a href={'mailto:euvictor_h@hotmail.com'}>
-                            <ImMail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out" />
+                            <IoIosMailUnread className="m-1 text-[30px] active:text-[#BD1D1B] transition duration-200 ease-in-out" />
                         </a>
 
 
                         <a href={'https://t.me/pleasevictor'}>
-                            <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                            <FaTelegramPlane className="m-1 text-[29px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </a>
 
                         <a href={'https://www.linkedin.com/in/lopesvictorh/'}>
-                            <FaLinkedin className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                            <FaLinkedinIn className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </a>
 
                         <a href={'https://wa.me/5521980260633'}>
-                            <FaWhatsappSquare className="m-1 text-[29px] active:text-[#25D366] transition duration-200 ease-in-out" />
+                            <FaWhatsapp className="m-1 text-[28px] active:text-[#25D366] transition duration-200 ease-in-out" />
                         </a>
 
                     </div>
