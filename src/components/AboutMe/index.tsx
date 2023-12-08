@@ -66,7 +66,7 @@ const ABOUT_ME = [
     content:
       <div className="grid grid-cols-2 gap-x-6 gap-y-4 mt-4">
            <div className="">
-            <span className="text-[#d6c49d]">
+            <span className="text-[#7fabca]">
               Testes:
             </span>
             <ul>
@@ -75,7 +75,7 @@ const ABOUT_ME = [
             </ul>
           </div>
           <div>
-            <span className="text-[#d6c49d]">Ferramentas:</span>
+            <span className="text-[#7fabca]">Ferramentas:</span>
             <ul>
               <li>Postman</li>
               <li>Trello</li>
@@ -98,7 +98,7 @@ export default function AboutMe() {
   }
 
   return (
-    <div id="sobremim">
+    <div id="sobremim" className="bg-black">
 
       <section className="text-white">
 
@@ -120,13 +120,13 @@ export default function AboutMe() {
                 direction="down"
                 duration={1000}
               >
-                <h1 className="text-[#CEB786] font-sansnarrow font-bold mb-2 text-2xl">Sobre Mim...</h1>
+                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl">Sobre Mim...</h1>
               </Fade>
               <Fade
                 direction="left"
                 duration={1000}
               >
-                <p className="text-sm font-barlow lg:text-base text-justify">
+                <p className="text-sm font-lato lg:text-base text-justify">
                   Me chamo Victor Lopes, um entusiasta da tecnologia.
                   Como desenvolvedor, busco a interseção entre criatividade e tecnologia para aprimorar
                   constantemente minhas habilidades. Estudo Análise e Desenvolvimento de Sistemas,
@@ -137,7 +137,7 @@ export default function AboutMe() {
                 </p>
               </Fade>
 
-              <div id="AboutMe" className="text-white xl:gap-5 sm:py-1 xl:px-1 font-sansnarrow">
+              <div id="AboutMe" className="text-white xl:gap-5 sm:py-1 xl:px-1 font-lato">
                 <Fade
                   duration={4000}
                 >
@@ -184,6 +184,9 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
+      <br />
+      <br />
+      <br />
       </section >
     </div>
   )

@@ -3,12 +3,17 @@ import { Link } from 'react-scroll';
 import Image from 'next/image';
 import react, { useState } from 'react';
 import { BiBookBookmark, BiBrain } from 'react-icons/bi';
-import { BsFillPersonVcardFill, BsPersonWorkspace, BsTelegram } from 'react-icons/bs';
+import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
-import { ImMail } from 'react-icons/im';
-import { FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import SocialNetwork from '../SocialNetwork';
+import { PiGithubLogoFill } from "react-icons/pi";
+import { IoIosMailUnread } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
+
+
 
 
 const Navbar = () => {
@@ -30,34 +35,26 @@ const Navbar = () => {
     }
 
     return (
-        <nav id="nav" className={` ${color ? 'bg-[#4A3B1F] fixed z-50 backdrop-blur-md transition duration-150 ease-in'
+        <nav id="nav" className={` ${color ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
             :
-            'g-[#3a311de1] backdrop-blur-md transition duration-300 ease-out'} 
-                    fixed z-50 w-full h-24 shadow-sm bg-[#f3f5f90] font-sansnarrow`}
+            'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
+                    fixed z-50 w-full h-12 font-semibold text-3xl font-barlow`}
         >
-            <div className="flex justify-between items-center h-full px-4">
-                <Image
-                    src={logotipo.src}
-                    alt="logo"
-                    width="120"
-                    height="75"
-                    priority
-                />
-
-                <div className="hidden sm:flex">
-                    <ul className="hidden sm:flex text-sm mr-52 mt-8">
+            <div className="flex justify-evenly items-center h-full sm:flex">
+                <div className="flex w-full justify-center items-center">
+                    <ul className="hidden sm:flex text-sm">
                         <Link
                             to="inicio"
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-120}
                         >
-                            <li className=" text-white  p-2 uppercase py-2
+                            <li className=" p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
+                             active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Início</li>
                         </Link>
                         <Link
@@ -65,14 +62,14 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-30}
                         >
-                            <li className=" text-white  p-2 uppercase py-2
+                            <li className="p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">Sobre mim</li>
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
+                             active:text-[#535353] active:bg-[#1818188e] 
+                             transition duration-500 ease-in-out">Sobre Mim</li>
                         </Link>
                         <a href="/">
                             <Link
@@ -80,38 +77,41 @@ const Navbar = () => {
                                 smooth={true}
                                 duration={500}
                                 spy={true}
-                                offset={50}
+                                // offset={}
                             >
-                                <li className="pb-2 text-white  p-2 uppercase py-2
+                                <li className="p-2
                             md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
-                             transition duration-500 ease-in-out">projetos</li>
+                             text-bold cursor-pointer
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
+                             active:text-[#535353] active:bg-[#1818188e] 
+                             transition duration-500 ease-in-out">Projetos</li>
                             </Link>
                         </a>
                         <a href="/">
-                            <li className="pb-2 text-white  p-2 uppercase py-2
+                            <li className="p-2
                             md:px-6 text-center 
-                             text-bold
-                             hover:text-[#f2bc65] active:text-[#382b18]  hover:bg-[#58585880] active:bg-[#cacad26c]
-                             active:text-[#bebdc9e1] 
+                             text-bold cursor-pointer
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
+                             active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Cursos</li>
                         </a>
                     </ul>
                 </div>
-                <div onClick={handleNav} className="md:hidden cursor-pointer">
-                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#f3be69] active:text-[#5d4d34]" />
+                    <div className="w-full justify-end items-center mr-10">
+                    <SocialNetwork />
+                    </div>
+                <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
+                    <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
                 </div>
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen bg-[#4A3B1F] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen text-white bg-[#000000] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
                     "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
             }
             >
                 <div className="flex w-full items-center justify-end">
-                    <div onClick={handleNav} className="cursor-pointer text-[#f3be69] active:text-[#5d4d34]">
+                    <div onClick={handleNav} className="cursor-pointer text-[#a09f9f] active:text-[#c35555]">
                         <CgCloseR size={25} />
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                     src={logotipo}
                     alt="logot"
                     className="cursor-pointer" />
-                <div className="flex-col text-white text-sm uppercase">
+                <div className="flex-col text-white text-sm">
                     <ul>
                         <Link href="/"
                             to="inicio"
@@ -130,7 +130,7 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BsFillPersonVcardFill className="m-2" /> Início
                             </li>
@@ -143,7 +143,7 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BsFillPersonVcardFill className="m-2" /> Sobre mim
                             </li>
@@ -156,14 +156,14 @@ const Navbar = () => {
                             offset={50}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#535353]"
                             >
                                 <BsPersonWorkspace className="m-2" /> Projetos
                             </li>
                         </Link>
                         <a href="/">
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#8D6D3A]"
+                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BiBookBookmark className="m-2" /> Cursos
                             </li>
@@ -176,30 +176,30 @@ const Navbar = () => {
                 <hr />
                 <br />
 
-                <div className="flex items-center justify-center w-full text-white font-sansnarrow py-1 pt-10">
+                <div className="flex items-center justify-center w-full text-white font-NotoKawi py-1 pt-10">
                     <span className="text-sm ">CONTATO</span>
                 </div>
                 <div className="items-center flex justify-center">
                     <div className="flex items-center text-white mt-5 text-2xl">
                         <a href={'https://github.com/VictorLopesz'}>
-                            <FaGithubSquare className="m-1 text-[29px] active:text-[#000000] transition duration-200 ease-in-out" />
+                            <PiGithubLogoFill className="m-1 text-[28px] active:text-[#4a4949] transition duration-200 ease-in-out" />
                         </a>
 
                         <a href={'mailto:euvictor_h@hotmail.com'}>
-                            <ImMail className="m-1 active:text-[#BD1D1B] transition duration-200 ease-in-out" />
+                            <IoIosMailUnread className="m-1 text-[30px] active:text-[#BD1D1B] transition duration-200 ease-in-out" />
                         </a>
 
 
                         <a href={'https://t.me/pleasevictor'}>
-                            <BsTelegram className="m-1 active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                            <FaTelegramPlane className="m-1 text-[29px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </a>
 
                         <a href={'https://www.linkedin.com/in/lopesvictorh/'}>
-                            <FaLinkedin className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
+                            <FaLinkedinIn className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
                         </a>
 
                         <a href={'https://wa.me/5521980260633'}>
-                            <FaWhatsappSquare className="m-1 text-[29px] active:text-[#25D366] transition duration-200 ease-in-out" />
+                            <FaWhatsapp className="m-1 text-[28px] active:text-[#25D366] transition duration-200 ease-in-out" />
                         </a>
 
                     </div>

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import AboutMe from '@/components/AboutMe';
 import SocialNetwork from '../components/SocialNetwork';
-import Projects from "@/components/Projetcs";
+import Projects from "@/components/Projetos";
 
 
 export default function Home() {
@@ -13,23 +13,25 @@ export default function Home() {
 
       <Navbar />
       <div className="
-      pt-28 flex min-h-screen
-      flex-col bg-gradient-to-r from-[#1B1B1B] to-[#000000]
+      flex min-h-screen
+      flex-col bg-[#ededee]
       ">
-        <div className="container mx-auto py-4 w-[70%]">
-          <Welcome />
-          {/* falta colocar um avatar melhor e mais parecido comigo */}
-          {/* adicionar o currículo para download */}
+        <div className="w-full h-full flex items-center pt-10 md:pt-8 lg:pt-9 xl:pt-10 justify-center">
+          <div className="container mx-auto py-4 w-[70%]">
+            <Welcome />
+            {/* falta colocar um avatar melhor e mais parecido comigo */}
+            {/* adicionar o currículo para download */}
+          </div>
         </div>
-        <div>
-          <SocialNetwork />
-        </div>
+
         <br />
         <br />
         <br />
-        <div className="container mx-auto py-4 w-[70%]">
-          {/* falta uma foto melhor minha */}
-          <AboutMe />
+        <div className="bg-[#000000] w-full h-full flex items-center justify-center">
+          <div className="container mx-auto py-4 w-[70%]">
+            {/* falta uma foto minha*/}
+            <AboutMe />
+          </div>
         </div>
         <br />
         <div>

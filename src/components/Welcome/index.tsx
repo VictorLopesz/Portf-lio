@@ -17,11 +17,11 @@ const Welcome = () => {
 
     return (
         <>
-            <div id="inicio">
+            <div id="inicio" className="pt-12 sm:mt-8 lg:mt-12 xl:mt-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
-                        <h1 className="text-white mb-4 text-3x1 sm:text-6x1 lg:text-4xl font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9e7f4c] to-[#c3a971]">
+                        <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">
+                            <span className="text-transparent bg-clip-text bg-[#233949]">
                                 Olá, eu sou
                                 <p>
                                     {" "}
@@ -42,16 +42,16 @@ const Welcome = () => {
                                 repeat={Infinity}
                             />
                         </h1>
-                        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl font-roboto">
+                        <p className="text-black text-base sm:text-lg mb-6 lg:text-xl font-roboto">
                             <Fade
                                 duration={4000}
                             >
-                                <span className="font-semibold text-white text-justify">
+                                <span className="font-semibold text-[#233949] text-justify">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
                                 </Fade>
                                 <Fade
-                                    duration={8000}
+                                    duration={6000}
                                 >
                                     Aqui você conhecerá um pouco sobre mim e meu trabalho.
                                     Sinta-se à vontade.
@@ -65,11 +65,8 @@ const Welcome = () => {
                             >
                                 <button className="
                         p-4 px-5 py-3 rounded-lg uppercase
-                        bg-gradient-to-br from-[#aa8441]
-                        to-[#c7a761] font-sansnarrow 
-                        font-semibold hover:bg-gradient-to-br
-                         hover:from-[#44361d] hover:to-[#8b6e3c]
-                         text-[#1c1a1a] ease-in duration-300
+                        bg-[#233949] font-lato 
+                        font-semibold text-[#fff] hover:text-[#c5c2c2]
                           active:bg-slate-800
                          ">
                                     download cv
@@ -81,10 +78,10 @@ const Welcome = () => {
 
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0 flex justify-evenly items-center max-w-screen-lg">
                         <Fade
-                            duration={2000}
-                            direction='up'
+                            duration={3000}
+                            direction='down'
                         >
-                            <div className=" bg-gradient-to-r from-[#7B6435] to-[#ecd5a4] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
+                            <div className=" bg-gradient-to-r from-[#8bb6d4] to-[#5e91b6] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
                                 <Image
                                     src={avatar}
                                     alt='avatar'
@@ -98,8 +95,10 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-            </div>
             <br />
+            <br />
+            <br />
+            </div>
         </>
     )
 };
