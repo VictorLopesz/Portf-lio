@@ -34,8 +34,10 @@ export default function Home() {
           </div>
         </div>
         <br />
-        <div>
-          <Projects />
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="container h-screen mx-auto py-4 w-[70%]">
+            <Projects />
+          </div>
         </div>
       </div>
     </>
