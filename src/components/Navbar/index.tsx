@@ -62,7 +62,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={-30}
+                            offset={-60}
                         >
                             <li className="p-2
                             md:px-6 text-center 
@@ -77,7 +77,7 @@ const Navbar = () => {
                                 smooth={true}
                                 duration={500}
                                 spy={true}
-                                // offset={}
+                                offset={-80}
                             >
                                 <li className="p-2
                             md:px-6 text-center 

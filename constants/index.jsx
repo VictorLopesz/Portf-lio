@@ -25,6 +25,16 @@ const Projects = [
         title: "Sistema de Biblioteca",
         text: 'Sistema de Biblioteca para CRUD (Criar, ler, editar e deletar), feito com HTML, TailwindCSS e PHP',
         image: image3
+    },
+    {
+        title: "Sistema de Biblioteca",
+        text: 'Sistema de Biblioteca para CRUD (Criar, ler, editar e deletar), feito com HTML, TailwindCSS e PHP',
+        image: image3
+    },
+    {
+        title: "Sistema de Biblioteca",
+        text: 'Sistema de Biblioteca para CRUD (Criar, ler, editar e deletar), feito com HTML, TailwindCSS e PHP',
+        image: image3
     }
 ];
 

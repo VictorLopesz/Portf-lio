@@ -19,7 +19,7 @@ const Projetos = () => {
 
     return (
       <div id="projetos" className="flex itens-center justify-center">
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="gap-x-8 gap-y-4 lg:gap-x-8 lg:gap-y-4 xl:gap-x-8 xl:gap-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-6">
           {Projects.map((project: any, index: any) => {
             return (
               <Cards
@@ -27,6 +27,7 @@ const Projetos = () => {
                 title={project.title}
                 text={project.text}
                 image={project.image.src}
+                
               />
             )
           })} 

@@ -23,7 +23,7 @@ const Cards = ({ image, title, text }: Props) => {
     return (
         <div
             onClick={handleAnima}
-            className="w-[225px] h-[160px] md:w-[225px] md:h-[160px] lg:w-[450px] lg:h-[280px] xl:w-[450px] xl:h-[280px] rounded-md cursor-pointer">
+            className="w-[225px] h-[160px] md:w-[225px] md:h-[160px] lg:w-[360px] lg:h-[200px] xl:p-14 xl:w-[360px] xl:h-[300px] rounded-md cursor-pointer">
             <motion.div
                 className="flip-card-inner h-full w-full"
                 initial={false}
@@ -33,15 +33,15 @@ const Cards = ({ image, title, text }: Props) => {
             >
                 <div
                     style={{ backgroundImage: `url(${image})` }}
-                    className="w-full h-full flip-card-front bg-cover bg-center text-white rounded-lg p-4">
-                    <div className="absolute insert-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40" />
+                    className="w-full h-full flip-card-front bg-cover bg-center text-white rounded-lg">
+                    <div className="absolute insert-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-100" />
                     <div className="absolute insert-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center z-[20] justify-center">
                         Learn more &gt;
                     </div>
                 </div>
                 <div
                     style={{ backgroundImage: `url(${image})` }}
-                    className="w-full h-full flip-card-back bg-cover bg-center text-white rounded-lg p-4">
+                    className="w-full h-full flip-card-back bg-cover bg-center text-white rounded-lg">
                     <div className="absolute insert-0 w-full h-full rounded-md bg-black opacity-50" />
                     <div className="flex flex-col gap-20 py-3 z-[30]">
                         <h1 className="text-whote text-2xl font-semibold">{title}</h1>
