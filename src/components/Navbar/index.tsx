@@ -48,9 +48,9 @@ const Navbar = () => {
                             <li className=" p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
                              active:text-[#535353] active:bg-[#1818188e] 
-                             transition duration-500 ease-in-ou">Início</li>
+                             transition duration-500 ease-in-out">Início</li>
                         </Link>
                         <Link
                             to="sobremim"
@@ -62,7 +62,7 @@ const Navbar = () => {
                             <li className="p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
                              active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Sobre Mim</li>
                         </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
                                 <li className="p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
                              active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Projetos</li>
                             </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
                             <li className="p-2
                             md:px-6 text-center 
                              text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#00000080]
+                             hover:text-[#e8e7e5] hover:bg-[#304E63]
                              active:text-[#535353] active:bg-[#1818188e] 
                              transition duration-500 ease-in-out">Cursos</li>
                         </a>

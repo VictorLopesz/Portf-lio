@@ -16,8 +16,7 @@ export default function Home() {
       pt-28 flex min-h-screen
       flex-col bg-[#ededee]
       ">
-        {/* bg-gradient-to-r from-[#1B1B1B] to-[#000000] */}
-        <div className="container mx-auto py-4 max-w-[90%] bg-[#FFFFFF]">
+        <div className="container mx-auto py-4 w-[70%]">
           <Welcome />
           {/* falta colocar um avatar melhor e mais parecido comigo */}
           {/* adicionar o currículo para download */}

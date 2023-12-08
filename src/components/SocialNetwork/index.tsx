@@ -15,8 +15,7 @@ export default function socialNetwork() {
 
             {isDesktopOrLaptop && (
                 <div className="
-                text-white hover:text-black fixed
-                 hover:bg-[#b8b8b8] hover:transition
+                text-black fixed hover:bg-[#b8b8b8] hover:transition
                   transition hover:duration-150 duration-150
                    hover:ease-in-out ease-in-out p-2
                     rounded-r-lg top-1/2 left-0 transform
