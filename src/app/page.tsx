@@ -1,11 +1,9 @@
-'use client';
+'use client'
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import AboutMe from '@/components/AboutMe';
-import SocialNetwork from '../components/SocialNetwork';
-import Projects from "@/components/Projetos";
-
+import Projetos from '@/components/Projetos';
 
 export default function Home() {
   return (
@@ -35,8 +33,10 @@ export default function Home() {
         </div>
         <br />
         <div className="w-full h-full flex items-center justify-center">
-          <div className="container h-screen mx-auto py-4 w-[90%]">
-            <Projects />
+          <div className="container py-4 mx-auto w-[90%]">
+            {/* falta colocar links e imagens corretas, além de completar a página */}
+          <Projetos/>
+            
           </div>
         </div>
       </div>

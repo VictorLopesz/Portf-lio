@@ -8,7 +8,6 @@ import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
 
 
-
 const Welcome = () => {
 
     const isDesktopOrLaptop = useMediaQuery({

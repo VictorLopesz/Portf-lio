@@ -9,20 +9,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.flip-card-inner {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+@layer base {
+  body {
+    background-color: #000000;
+  }
 }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  backface-visibility: hidden;
+.slick-slide > div {
+  margin: 0 10px;
 }
 
-.flip-card-back {
-  transform: rotateY(180deg);
+.slick-arrow,
+.slick-prev {
+  color: #000000;
 }
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 
 /* :root {
