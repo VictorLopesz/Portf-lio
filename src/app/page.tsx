@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <br />
         <div className="w-full h-full flex items-center justify-center">
-          <div className="container py-4 mx-auto w-[90%]">
+          <div className="container py-4 w-[90%]">
             {/* falta colocar links e imagens corretas, além de completar a página */}
           <Projetos/>
             

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -22,10 +24,12 @@ module.exports = {
       },
       colors: {
         "dark-purple": "#081451",
-        'light-white': 'rgba(255, 255, 255, 0, 10)'
-      }
-
+        'light-white': 'rgba(255, 255, 255, 0, 10)',
+        'light-blue': colors.lightBlue,
+        cyan: colors.cyan,
+      },
     },
   },
+  variants: {},
   plugins: [],
 }

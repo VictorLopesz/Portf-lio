@@ -110,16 +110,17 @@ const data = [
 ];
 
 export default function SlideShow() {
+    const isTablet = useMediaQuery({ maxWidth: 1023 });
     const isMobile = useMediaQuery({ maxWidth: 767 }); 
 
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: isMobile ? 1 : 3,
+    slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: false,
+    pauseOnHover: false
     
   };
   
@@ -170,9 +171,11 @@ export default function SlideShow() {
                             </div>
                         </div>
                 ))}
+
                 <div>
                 </div>
                         </Slider>
+  
             <br />
             <br />
             </div>
