@@ -60,7 +60,7 @@ const Welcome = () => {
                         <div className="flex items-center justify-center">
                             <Fade
                                 duration={2000}
-                                direction='up'
+                                direction='down'
                             >
                                 <button className="
                         p-4 px-5 py-3 rounded-lg uppercase
