@@ -120,7 +120,7 @@ export default function AboutMe() {
                 direction="down"
                 duration={1000}
               >
-                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl">Sobre Mim...</h1>
+                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl m-4">Sobre Mim...</h1>
               </Fade>
               <Fade
                 direction="left"
@@ -139,7 +139,7 @@ export default function AboutMe() {
 
               <div id="AboutMe" className="text-white ml-4 xl:gap-5 sm:py-1 xl:px-1 font-lato">
                 <Fade
-                  duration={4000}
+                  duration={2000}
                 >
                   <div className="mt-8 flex text-sm flex-row lg:text-base justify-start">
                     <TabButton

@@ -9,6 +9,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor: ['active'],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

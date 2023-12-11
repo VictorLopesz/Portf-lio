@@ -43,14 +43,14 @@ const Welcome = () => {
                         </h1>
                         <p className="text-black text-base sm:text-lg mb-6 lg:text-xl font-roboto">
                             <Fade
-                                duration={4000}
+                                duration={2000}
                             >
                                 <span className="font-semibold text-[#233949] text-justify">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
                                 </Fade>
                                 <Fade
-                                    duration={6000}
+                                    duration={2000}
                                 >
                                     Aqui você conhecerá um pouco sobre mim e meu trabalho.
                                     Sinta-se à vontade.
@@ -77,7 +77,7 @@ const Welcome = () => {
 
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0 flex justify-evenly items-center max-w-screen-lg">
                         <Fade
-                            duration={3000}
+                            duration={2000}
                             direction='down'
                         >
                             <div className=" bg-gradient-to-r from-[#8bb6d4] to-[#5e91b6] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">

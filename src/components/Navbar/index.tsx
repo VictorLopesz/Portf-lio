@@ -1,7 +1,7 @@
 'use client'
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 import Image from 'next/image';
-import react, { useState } from 'react';
+import React, { useState } from 'react';
 import { BiBookBookmark, BiBrain } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -12,7 +12,6 @@ import SocialNetwork from '../SocialNetwork';
 import { PiGithubLogoFill } from "react-icons/pi";
 import { IoIosMailUnread } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
-
 
 
 
