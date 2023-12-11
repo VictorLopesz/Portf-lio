@@ -9,6 +9,7 @@ import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 
 export default function socialNetwork() {
+
     const isDesktopOrLaptop = useMediaQuery({
         query: "(min-device-width: 1024px)"
     });

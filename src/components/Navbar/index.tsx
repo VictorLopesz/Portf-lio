@@ -1,7 +1,7 @@
 'use client'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { BiBookBookmark, BiBrain } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -16,22 +16,29 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [color, setColor] = useState(false);
-
-    const changeColor = () => {
-        if (window.scrollY >= 7) {
-            setColor(true)
-        } else {
-            setColor(false)
-        }
-    }
-
-    window.addEventListener('scroll', changeColor)
-
-    const handleNav = () => {
-        setMenuOpen(!menuOpen);
-    }
+        const [menuOpen, setMenuOpen] = useState(false);
+        const [color, setColor] = useState(false);
+        const [activeLink, setActiveLink] = useState("inicio");
+        
+        
+        const changeColor = () => {
+          if (window.scrollY >= 7) {
+            setColor(true);
+          } else {
+            setColor(false);
+          }
+        };
+      
+        window.addEventListener("scroll", changeColor);
+      
+        const handleNav = () => {
+          setMenuOpen(!menuOpen);
+        };
+      
+        const handleLinkClick = (Link:any) => {
+          setActiveLink(Link);
+          setMenuOpen(false);
+        };
 
     return (
         <nav id="nav" className={` ${color ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
@@ -42,6 +49,7 @@ const Navbar = () => {
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <div className="flex w-full justify-center items-center">
                     <ul className="hidden sm:flex text-sm">
+              
                         <Link
                             to="inicio"
                             smooth={true}
@@ -49,13 +57,17 @@ const Navbar = () => {
                             spy={true}
                             offset={-120}
                         >
-                            <li className=" p-2
-                            md:px-6 text-center 
-                             text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#304E63]
-                             active:text-[#535353] active:bg-[#1818188e] 
-                             transition duration-500 ease-in-out">Início</li>
+                                    <li
+                                        onClick={() => handleLinkClick("inicio")}
+                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                                        ${activeLink === "inicio" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#1f2f67]" : ""}
+                                        hover:text-[#6375b6] 
+                                        active:text-[#535353] active:bg-[#1818188e] 
+                                        transition duration-500 ease-in-out`}>
+                                        Início
+                                        </li>
                         </Link>
+                     
                         <Link
                             to="sobremim"
                             smooth={true}
@@ -63,12 +75,15 @@ const Navbar = () => {
                             spy={true}
                             offset={-60}
                         >
-                            <li className="p-2
-                            md:px-6 text-center 
-                             text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#304E63]
-                             active:text-[#535353] active:bg-[#1818188e] 
-                             transition duration-500 ease-in-out">Sobre Mim</li>
+                               <li
+                                        onClick={() => handleLinkClick("sobremim")}
+                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                                        ${activeLink === "sobremim" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
+                                        hover:text-[#6375b6] 
+                                        active:text-[#535353] active:bg-[#1818188e] 
+                                        transition duration-500 ease-in-out`}>
+                                        Sobre Mim
+                                        </li>
                         </Link>
                         <a href="/">
                             <Link
@@ -78,21 +93,27 @@ const Navbar = () => {
                                 spy={true}
                                 offset={-80}
                             >
-                                <li className="p-2
-                            md:px-6 text-center 
-                             text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#304E63]
-                             active:text-[#535353] active:bg-[#1818188e] 
-                             transition duration-500 ease-in-out">Projetos</li>
+                               <li
+                                        onClick={() => handleLinkClick("projetos")}
+                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                                        ${activeLink === "projetos" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
+                                        hover:text-[#6375b6]
+                                        active:text-[#535353] active:bg-[#1818188e] 
+                                        transition duration-500 ease-in-out`}>
+                                            Projetos
+                                        </li>
                             </Link>
                         </a>
                         <a href="/">
-                            <li className="p-2
-                            md:px-6 text-center 
-                             text-bold cursor-pointer
-                             hover:text-[#e8e7e5] hover:bg-[#304E63]
-                             active:text-[#535353] active:bg-[#1818188e] 
-                             transition duration-500 ease-in-out">Cursos</li>
+                        <li
+                                        onClick={() => handleLinkClick("cursos")}
+                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                                        ${activeLink === "cursos" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
+                                        hover:text-[#6375b6] 
+                                        active:text-[#535353] active:bg-[#1818188e] 
+                                        transition duration-500 ease-in-out`}>
+                                            Cursos
+                                        </li>
                         </a>
                     </ul>
                 </div>

@@ -116,8 +116,7 @@ const data = [
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
                 <IoLogoJavascript className=" w-5 h-5  mr-1 text-[#EFD81D]" />
             </div>
-    }
-
+    }  
 ];
 
 export default function SlideShow() {
@@ -137,8 +136,7 @@ export default function SlideShow() {
 
     return (
         <Fade
-            direction="up"
-            duration={500}
+            duration={2000}
         >
             <div className="w-3/4 m-auto">
                 <div className="mt-20">

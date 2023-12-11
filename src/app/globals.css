@@ -32,6 +32,12 @@
   @apply visible z-50;
 }
 
+.custom-underline{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #00f;
+}
+
 @tailwind utilities;
 
 
