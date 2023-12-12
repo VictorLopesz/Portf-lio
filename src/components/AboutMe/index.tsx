@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
-import eu from '../../../public/assets/eu.jpeg';
+import eu from '../../../public/assets/minhaFoto (2).jpeg';
 import TabButton from '../TabButton';
 import { Fade } from 'react-awesome-reveal';
 
@@ -23,7 +23,7 @@ const ABOUT_ME = [
             <ul>
               <li>Next Js</li>
               <li>React Js</li>
-              <li>PHP</li>
+              <li>PHP</li>  
             </ul>
           </div>
 

@@ -31,12 +31,11 @@ export default function Home() {
             <AboutMe />
           </div>
         </div>
-        <br />
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center bg-[#bdbdbd]">
           <div className="container py-4 w-[90%]">
             {/* falta colocar links e imagens corretas, além de completar a página */}
           <Projetos/>
-            
+          <br />
           </div>
         </div>
       </div>

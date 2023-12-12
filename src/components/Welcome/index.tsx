@@ -6,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
+import gif from '../../../public/assets/video.gif'
 
 
 const Welcome = () => {
@@ -82,8 +83,8 @@ const Welcome = () => {
                         >
                             <div className=" bg-gradient-to-r from-[#8bb6d4] to-[#5e91b6] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
                                 <Image
-                                    src={avatar}
-                                    alt='avatar'
+                                    src={gif}
+                                    alt='gif'
                                     width={400}
                                     height={400}
                                     className="rounded-full"

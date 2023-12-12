@@ -10,8 +10,9 @@ import logotipo from '../../../public/assets/logotipo.png';
 import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import SocialNetwork from '../SocialNetwork';
 import { PiGithubLogoFill } from "react-icons/pi";
-import { IoIosMailUnread } from "react-icons/io";
+import { IoIosHome, IoIosMailUnread } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
 
 
 
@@ -60,11 +61,14 @@ const Navbar = () => {
                                     <li
                                         onClick={() => handleLinkClick("inicio")}
                                         className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "inicio" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#1f2f67]" : ""}
+                                        ${activeLink === "inicio" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b6] 
                                         active:text-[#535353] active:bg-[#1818188e] 
                                         transition duration-500 ease-in-out`}>
+                                        <div className="flex items-center justify-evenly">
+                                        <IoIosHome className="mr-1"/>
                                         Início
+                                        </div>
                                         </li>
                         </Link>
                      
@@ -78,11 +82,12 @@ const Navbar = () => {
                                <li
                                         onClick={() => handleLinkClick("sobremim")}
                                         className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "sobremim" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
-                                        hover:text-[#6375b6] 
-                                        active:text-[#535353] active:bg-[#1818188e] 
-                                        transition duration-500 ease-in-out`}>
+                                        ${activeLink === "sobremim" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
+                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        <div className="flex items-center justify-evenly">
+                                        <IoPersonSharp  className="mr-1"/>
                                         Sobre Mim
+                                        </div>
                                         </li>
                         </Link>
                         <a href="/">
@@ -96,11 +101,12 @@ const Navbar = () => {
                                <li
                                         onClick={() => handleLinkClick("projetos")}
                                         className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "projetos" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
-                                        hover:text-[#6375b6]
-                                        active:text-[#535353] active:bg-[#1818188e] 
-                                        transition duration-500 ease-in-out`}>
-                                            Projetos
+                                        ${activeLink === "projetos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
+                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        <div className="flex items-center justify-evenly">
+                                        <BsPersonWorkspace className="mr-1"/>
+                                        Projetos
+                                            </div>
                                         </li>
                             </Link>
                         </a>
@@ -108,11 +114,12 @@ const Navbar = () => {
                         <li
                                         onClick={() => handleLinkClick("cursos")}
                                         className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "cursos" ? "border border-[#5f7d92] bg-[#84b2d03a] text-bold text-[#c4c5c6]" : ""}
-                                        hover:text-[#6375b6] 
-                                        active:text-[#535353] active:bg-[#1818188e] 
-                                        transition duration-500 ease-in-out`}>
-                                            Cursos
+                                        ${activeLink === "cursos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
+                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        <div className="flex items-center justify-evenly">
+                                        <BiBookBookmark className="mr-1"/>
+                                        Cursos
+                                        </div>
                                         </li>
                         </a>
                     </ul>
@@ -152,7 +159,7 @@ const Navbar = () => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BsFillPersonVcardFill className="m-2" /> Início
+                                <IoIosHome className="m-2" /> Início
                             </li>
                         </Link>
                         <Link href="/"
