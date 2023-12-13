@@ -147,7 +147,7 @@ export default function SlideShow() {
                                 </div>
                                 <div className="flex flex-col justify-center items-center gap-10 p-2">
                                     <p className="text-[15px] font-semibold text-[#89B3D1]">{d.titulo}</p>
-                                    <p className="text-xs flex justify-center font-lato">{d.review}</p>
+                                    <p className="text-xs flex items-center justify-center font-lato">{d.review}</p>
 
                                     <div className="flex items-center w-full justify-between
                                     mb-5

@@ -10,6 +10,7 @@ import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 export default function socialNetwork() {
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const isDesktopOrLaptop = useMediaQuery({
         query: "(min-device-width: 1024px)"
     });
