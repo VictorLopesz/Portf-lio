@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
-import eu from '../../../public/assets/minhaFoto (2).jpeg';
+import eu from '../../../public/assets/minhaFoto.jpeg';
 import TabButton from '../TabButton';
 import { Fade } from 'react-awesome-reveal';
 
@@ -142,7 +142,7 @@ export default function AboutMe() {
                   duration={2000}
                 >
                   <div className="mt-8 flex text-sm flex-row lg:text-base justify-start">
-                    <TabButton
+                    <TabButton className="font-bold" 
                       selectTab={() => handleTabChange("Linguagens")}
                       active={tab === "Linguagens"}
                     >
@@ -150,7 +150,7 @@ export default function AboutMe() {
                       <span>Linguagens</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton
+                    <TabButton className="font-bold"
                       selectTab={() => handleTabChange("Banco de Dados")}
                       active={tab === "Banco de Dados"}
                     >
@@ -160,7 +160,7 @@ export default function AboutMe() {
                     </TabButton>
 
 
-                    <TabButton
+                    <TabButton className="font-bold"
                       selectTab={() => handleTabChange("QA/Tester")}
                       active={tab === "QA/Tester"}
                     >
@@ -168,7 +168,7 @@ export default function AboutMe() {
                       <span>QA/Tester</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton
+                    <TabButton className="font-bold"
                       selectTab={() => handleTabChange("Versionamento")}
                       active={tab === "Versionamento"}
                     >

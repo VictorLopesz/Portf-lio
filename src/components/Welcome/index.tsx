@@ -49,13 +49,13 @@ const Welcome = () => {
                                 <span className="font-semibold text-[#233949] text-justify">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
-                                </Fade>
-                                <Fade
-                                    duration={2000}
-                                >
-                                    Aqui você conhecerá um pouco sobre mim e meu trabalho.
-                                    Sinta-se à vontade.
-                                </Fade>
+                            </Fade>
+                            <Fade
+                                duration={2000}
+                            >
+                                Aqui você conhecerá um pouco sobre mim e meu trabalho.
+                                Sinta-se à vontade.
+                            </Fade>
                         </p>
 
                         <div className="flex items-center justify-center">
@@ -69,7 +69,9 @@ const Welcome = () => {
                         font-semibold text-[#fff] hover:text-[#c5c2c2]
                           active:bg-slate-800
                          ">
-                                    download cv
+                                    <a href="www.google.com.br">
+                                        download cv
+                                    </a>
                                 </button>
                             </Fade>
                         </div>
@@ -95,9 +97,9 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-            <br />
-            <br />
-            <br />
+                <br />
+                <br />
+                <br />
             </div>
         </>
     )

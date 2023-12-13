@@ -1,31 +1,30 @@
 'use client'
-import { Particles } from "react-tsparticles";
+import { Particles } from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import React, { useCallback } from 'react';
-import { FullScreen } from "tsparticles-engine";
 
 const ParticlesContainer = () => {
     const particlesInit = useCallback(async (engine: any) => {
         await loadFull(engine);
-    }, [])
+    }, []);
 
     const particlesLoaded = useCallback(async () => { }, []);
 
     return (
         <Particles
-            className="translate-z-0"
+            className='translate-z-0'
             id='tsparticles'
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                FullScreen: { enable: false },
+                fullScreen: { enable: false },
                 background: {
                     color: {
                         value: ''
                     },
                 },
                 fpsLimit: 120,
-                interactivity: {
+                interactivy: {
                     events: {
                         onClick: {
                             enable: false,
@@ -43,16 +42,16 @@ const ParticlesContainer = () => {
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.7,
                         }
                     }
                 },
                 particles: {
                     color: {
-                        value: '#000000',
+                        value: '#e68e2e',
                     },
                     links: {
-                        color: '#000000',
+                        color: '#f5d393',
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -79,13 +78,13 @@ const ParticlesContainer = () => {
                         value: 80
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.5
                     },
                     shape: {
                         type: 'circle'
                     },
                     size: {
-                        value: { min: 1, max: 5 }
+                        value: {min: 1, max: 5}
                     },
                 },
                 detectRetina: true,

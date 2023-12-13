@@ -16,6 +16,7 @@ import { FaEye, FaCode, FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiPhp } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
+import ParticlesContainer from '../ParticlesContainer';
 
 {/* <SiTailwindcss className=" text-[#1DC0CD] m-2" />
 <SiPhp className=" text-[#7B7FB5] m-2" /> */}
@@ -116,7 +117,7 @@ const data = [
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
                 <IoLogoJavascript className=" w-5 h-5  mr-1 text-[#EFD81D]" />
             </div>
-    }  
+    },
 ];
 
 export default function SlideShow() {
@@ -130,13 +131,14 @@ export default function SlideShow() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover: false
+        pauseOnHover: true
 
     };
 
     return (
         <Fade
-            duration={2000}
+            direction="up"
+            duration={500}
         >
             <div className="w-3/4 m-auto">
                 <div className="mt-20">
@@ -147,7 +149,7 @@ export default function SlideShow() {
                                 <div className=" h-56 flex justify-center items-center rounded-md">
                                     <Image src={d.img} alt="image1" className=" h-48 p-1" />
                                 </div>
-                                <div className="flex flex-col justify-center items-center gap-4 p-2">
+                                <div className="flex flex-col justify-center items-center gap-10 p-2">
                                     <p className="text-[15px] font-semibold text-[#89B3D1]">{d.titulo}</p>
                                     <p className="text-xs text-center">{d.review}</p>
 
@@ -186,9 +188,6 @@ export default function SlideShow() {
                                 </div>
                             </div>
                         ))}
-
-                        <div>
-                        </div>
                     </Slider>
 
                     <br />
