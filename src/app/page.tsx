@@ -21,6 +21,7 @@ export default function Home() {
           </div>
         </div>
         <br />
+        <br />        
         <br />
         <div className="bg-[#000000] w-full h-full flex items-center justify-center">
           <div className="container mx-auto py-4 w-[80%]">
