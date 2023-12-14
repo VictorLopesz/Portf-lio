@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Image from 'next/image';
-import { BiBookBookmark } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
@@ -12,6 +11,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import { IoIosHome, IoIosMailUnread } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
+import { BiSolidContact } from "react-icons/bi";
 
 
 
@@ -104,8 +104,8 @@ const Navbar = ({ isScrolled }:any) => {
                                         ${activeLink === "cursos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
-                                    <BiBookBookmark className="mr-1" />
-                                    Cursos
+                                    <BiSolidContact className="mr-1" />
+                                    Contato
                                 </div>
                             </li>
                     </ul>
@@ -175,7 +175,7 @@ const Navbar = ({ isScrolled }:any) => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BiBookBookmark className="m-2" /> Cursos
+                                <BiSolidContact className="m-2" /> Cursos
                             </li>
                         </a>
                     </ul>
