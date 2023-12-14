@@ -1,8 +1,8 @@
 'use client'
 import { Link } from "react-scroll";
 import Image from 'next/image';
-import React, {  useState } from 'react';
-import { BiBookBookmark, BiBrain } from 'react-icons/bi';
+import React, {  useEffect, useState } from 'react';
+import { BiBookBookmark } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
@@ -17,29 +17,35 @@ import { IoPersonSharp } from "react-icons/io5";
 
 
 const Navbar = () => {
-        const [menuOpen, setMenuOpen] = useState(false);
-        const [color, setColor] = useState(false);
-        const [activeLink, setActiveLink] = useState("inicio");
-        
-        
-        const changeColor = () => {
-          if (window.scrollY >= 7) {
-            setColor(true);
-          } else {
-            setColor(false);
-          }
-        };
-      
-        window.addEventListener("scroll", changeColor);
-      
-        const handleNav = () => {
-          setMenuOpen(!menuOpen);
-        };
-      
-        const handleLinkClick = (Link:any) => {
-          setActiveLink(Link);
-          setMenuOpen(false);
-        };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [color, setColor] = useState(false);
+  const [activeLink, setActiveLink] = useState("inicio");
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 7) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
+
+  const handleNav = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = (link:any) => {
+    setActiveLink(link);
+    setMenuOpen(false);
+  };
+
 
     return (
         <nav id="nav" className={` ${color ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
