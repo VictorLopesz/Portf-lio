@@ -100,7 +100,7 @@ export default function AboutMe() {
   return (
     <div id="sobremim" className="bg-black">
 
-      <section className="text-white">
+      <section className="text-white -py-1">
 
         <div className="md:grid md:grid-cols-2 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <Fade

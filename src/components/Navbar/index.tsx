@@ -1,14 +1,13 @@
 'use client'
+import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Image from 'next/image';
-import React, {  useEffect, useState } from 'react';
 import { BiBookBookmark } from 'react-icons/bi';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
 import logotipo from '../../../public/assets/logotipo.png';
 import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
-import SocialNetwork from '../SocialNetwork';
 import { PiGithubLogoFill } from "react-icons/pi";
 import { IoIosHome, IoIosMailUnread } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -16,39 +15,24 @@ import { IoPersonSharp } from "react-icons/io5";
 
 
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [color, setColor] = useState(false);
-  const [activeLink, setActiveLink] = useState("inicio");
+const Navbar = ({ isScrolled }:any) => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState("inicio");
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 7) {
-        setColor(true);
-      } else {
-        setColor(false);
-      }
+
+
+    const handleNav = () => {
+        setMenuOpen(!menuOpen);
     };
 
-    window.addEventListener("scroll", changeColor);
-
-    return () => {
-      window.removeEventListener("scroll", changeColor);
+    const handleLinkClick = (link:any) => {
+        setActiveLink(link);
+        setMenuOpen(false);
     };
-  }, []);
-
-  const handleNav = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const handleLinkClick = (link:any) => {
-    setActiveLink(link);
-    setMenuOpen(false);
-  };
 
 
     return (
-        <nav id="nav" className={` ${color ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
+        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
             :
             'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
                     fixed z-50 w-full h-12 font-semibold text-3xl font-barlow`}
@@ -56,7 +40,7 @@ const Navbar = () => {
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <div className="flex w-full justify-center items-center">
                     <ul className="hidden sm:flex text-sm">
-              
+
                         <Link
                             to="inicio"
                             smooth={true}
@@ -64,39 +48,38 @@ const Navbar = () => {
                             spy={true}
                             offset={-120}
                         >
-                                    <li
-                                        onClick={() => handleLinkClick("inicio")}
-                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                            <li
+                                onClick={() => handleLinkClick("inicio")}
+                                className={`p-2 md:px-6 text-center cursor-pointer 
                                         ${activeLink === "inicio" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b6] 
                                         active:text-[#535353] active:bg-[#1818188e] 
                                         transition duration-500 ease-in-out`}>
-                                        <div className="flex items-center justify-evenly">
-                                        <IoIosHome className="mr-1"/>
-                                        Início
-                                        </div>
-                                        </li>
+                                <div className="flex items-center justify-evenly">
+                                    <IoIosHome className="mr-1" />
+                                    Início
+                                </div>
+                            </li>
                         </Link>
-                     
+
                         <Link
                             to="sobremim"
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={-60}
+                            offset={-45}
                         >
-                               <li
-                                        onClick={() => handleLinkClick("sobremim")}
-                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                            <li
+                                onClick={() => handleLinkClick("sobremim")}
+                                className={`p-2 md:px-6 text-center cursor-pointer 
                                         ${activeLink === "sobremim" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
-                                        <div className="flex items-center justify-evenly">
-                                        <IoPersonSharp  className="mr-1"/>
-                                        Sobre Mim
-                                        </div>
-                                        </li>
+                                <div className="flex items-center justify-evenly">
+                                    <IoPersonSharp className="mr-1" />
+                                    Sobre Mim
+                                </div>
+                            </li>
                         </Link>
-                        <a href="/">
                             <Link
                                 to="projetos"
                                 smooth={true}
@@ -104,35 +87,29 @@ const Navbar = () => {
                                 spy={true}
                                 offset={-80}
                             >
-                               <li
-                                        onClick={() => handleLinkClick("projetos")}
-                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                                <li
+                                    onClick={() => handleLinkClick("projetos")}
+                                    className={`p-2 md:px-6 text-center cursor-pointer 
                                         ${activeLink === "projetos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
-                                        <div className="flex items-center justify-evenly">
-                                        <BsPersonWorkspace className="mr-1"/>
+                                    <div className="flex items-center justify-evenly">
+                                        <BsPersonWorkspace className="mr-1" />
                                         Projetos
-                                            </div>
-                                        </li>
+                                    </div>
+                                </li>
                             </Link>
-                        </a>
-                        <a href="/">
-                        <li
-                                        onClick={() => handleLinkClick("cursos")}
-                                        className={`p-2 md:px-6 text-center cursor-pointer 
+                            <li
+                                onClick={() => handleLinkClick("cursos")}
+                                className={`p-2 md:px-6 text-center cursor-pointer 
                                         ${activeLink === "cursos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
                                         hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
-                                        <div className="flex items-center justify-evenly">
-                                        <BiBookBookmark className="mr-1"/>
-                                        Cursos
-                                        </div>
-                                        </li>
-                        </a>
+                                <div className="flex items-center justify-evenly">
+                                    <BiBookBookmark className="mr-1" />
+                                    Cursos
+                                </div>
+                            </li>
                     </ul>
                 </div>
-                    <div className="w-full justify-end items-center mr-10">
-                    <SocialNetwork />
-                    </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
                     <GiHamburgerMenu size={25} className=" transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
                 </div>
@@ -160,7 +137,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-120}
                         >
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
@@ -173,7 +150,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-60}
                         >
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#535353]"
@@ -186,7 +163,7 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={50}
+                            offset={-80}
                         >
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#535353]"
@@ -238,8 +215,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </nav >
+        </div >
     );
+    
 };
 
 

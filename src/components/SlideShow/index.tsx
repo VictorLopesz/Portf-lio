@@ -133,8 +133,8 @@ export default function SlideShow() {
 
     return (
         <Fade
-            direction="up"
-            duration={500}
+            direction="down"
+            duration={1000}
         >
             <div className="w-3/4 m-auto">
                 <div className="mt-20">
