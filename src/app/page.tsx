@@ -47,8 +47,8 @@ const Home = () => {
             <br />
           </div>
         </div>
-        <div className="w-full flex items-center justify-center bg-gradient-to-b from-[#233949] to-[#000000]">
-          <div className="flex items-center justify-center container py-2 h-screen w-[100%]">
+        <div className="w-full bg-gradient-to-b from-[#233949] to-[#000000]">
+          <div className="container py-2 h-screen w-[100%]">
             <Contact />
           </div>
         </div>

@@ -2,15 +2,15 @@
 import React from 'react'
 import { BsTelephone } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
-import { FaInstagram, FaTelegramPlane, FaWhatsapp, FaHtml5, FaCss3Alt, FaReact, FaLinkedinIn } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { FaInstagram, FaTelegramPlane, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
+import Footer from '../Footer';
 
 const Contact = () => {
     return (
         <>
-            <div id="contato" className="text-[#ffffff] font-roboto pt-[60px] pb-[60px] flex items-center justify-center">
-                <Container>
+            <div id="contato" className="text-[#ffffff] font-roboto pt-[60px] pb-[60px] flex">
+                <Container className="">
                     <Row className="mb-5 mt-3">
                         <Col lg='8'>
                             <h1 className="display-4">
@@ -92,13 +92,9 @@ const Contact = () => {
                         </Col>
                     </Row>
                 </Container>
-                <br />
             </div>
-            {/* <div className="flex items-center justify-start font-lato bg-[#000000]">
-                <h6 className="m-1 text-[#c2bfbf]">
-                    Portfólio desenvolvido por Victor Lopes
-                </h6>
-            </div> */}
+
+            <Footer />
         </>
     )
 };
