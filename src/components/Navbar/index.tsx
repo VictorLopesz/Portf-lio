@@ -32,10 +32,10 @@ const Navbar = ({ isScrolled }:any) => {
 
 
     return (
-        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl font-semibold font-barlow fixed z-50 transition duration-150 ease-in'
+        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl font-barlow fixed z-50 transition duration-150 ease-in'
             :
             'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
-                    fixed z-50 w-full h-12 font-semibold text-3xl font-barlow`}
+                    fixed z-50 w-full h-12 text-3xl font-barlow`}
         >
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <div className="flex w-full justify-center items-center">
@@ -51,10 +51,8 @@ const Navbar = ({ isScrolled }:any) => {
                             <li
                                 onClick={() => handleLinkClick("inicio")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "inicio" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
-                                        hover:text-[#6375b6] 
-                                        active:text-[#535353] active:bg-[#1818188e] 
-                                        transition duration-500 ease-in-out`}>
+                                        ${activeLink === "inicio" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <IoIosHome className="mr-1" />
                                     Início
@@ -72,8 +70,8 @@ const Navbar = ({ isScrolled }:any) => {
                             <li
                                 onClick={() => handleLinkClick("sobremim")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "sobremim" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
-                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        ${activeLink === "sobremim" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <IoPersonSharp className="mr-1" />
                                     Sobre Mim
@@ -90,8 +88,8 @@ const Navbar = ({ isScrolled }:any) => {
                                 <li
                                     onClick={() => handleLinkClick("projetos")}
                                     className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "projetos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
-                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        ${activeLink === "projetos" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                     <div className="flex items-center justify-evenly">
                                         <BsPersonWorkspace className="mr-1" />
                                         Projetos
@@ -101,8 +99,8 @@ const Navbar = ({ isScrolled }:any) => {
                             <li
                                 onClick={() => handleLinkClick("cursos")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "cursos" ? "border border-[#707f89] bg-[#84b2d0eb] text-bold text-[#1f2f67]" : ""}
-                                        hover:text-[#6375b68d] active:text-[#535353] active:bg-[#1818188e] transition duration-500 ease-in-out`}>
+                                        ${activeLink === "cursos" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <BiSolidContact className="mr-1" />
                                     Contato
@@ -155,7 +153,7 @@ const Navbar = ({ isScrolled }:any) => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BsFillPersonVcardFill className="m-2" /> Sobre mim
+                                <BsFillPersonVcardFill className="m-2" /> Sobre Mim
                             </li>
                         </Link>
                         <Link href="/"
@@ -175,7 +173,7 @@ const Navbar = ({ isScrolled }:any) => {
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BiSolidContact className="m-2" /> Cursos
+                                <BiSolidContact className="m-2" /> Contato
                             </li>
                         </a>
                     </ul>

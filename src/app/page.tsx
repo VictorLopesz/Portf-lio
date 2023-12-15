@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from "react"
-import Navbar from "@/components/Navbar/index"
-import Welcome from "@/components/Welcome/index"
-import AboutMe from '@/components/AboutMe/index'
-import Projetos from '@/components/Projetos/index'
+import Navbar from "@/components/Navbar"
+import Welcome from "@/components/Welcome"
+import AboutMe from "@/components/AboutMe"
+import Projetos from "@/components/Projetos"
+import Contact from "@/components/Contact"
 
 
 const Home = () => {
@@ -44,6 +45,11 @@ const Home = () => {
           <div className="container py-2 w-[90%]">
             <Projetos/>
             <br />
+          </div>
+        </div>
+        <div className="w-full flex items-center justify-center">
+          <div className="container py-2 w-[90%]">
+          <Contact/>
           </div>
         </div>
       </div>
