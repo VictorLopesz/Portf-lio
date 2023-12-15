@@ -107,26 +107,28 @@ export default function AboutMe() {
             direction="left"
             duration={1000}
           >
+            <div className="flex items-center justify-center">
             <Image
               src={eu}
               alt={'me'}
-              width={500}
-              height={500}
-            />
+              width={450}
+              height={450}
+              />
+              </div>
           </Fade>
           <div className="flex justify-center">
-            <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+            <div className="md:mt-0 text-left flex flex-col h-full">
               <Fade
                 direction="down"
                 duration={1000}
               >
-                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl m-4">Sobre Mim...</h1>
+                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl">Sobre Mim...</h1>
               </Fade>
               <Fade
                 direction="left"
                 duration={1000}
               >
-                <p className="text-sm font-lato m-4 lg:text-base text-justify">
+                <p className="text-sm font-lato ml-2 lg:text-base text-justify">
                   Me chamo Victor Lopes, um entusiasta da tecnologia.
                   Como desenvolvedor, busco a interseção entre criatividade e tecnologia para aprimorar
                   constantemente minhas habilidades. Estudo Análise e Desenvolvimento de Sistemas,
@@ -137,7 +139,7 @@ export default function AboutMe() {
                 </p>
               </Fade>
 
-              <div id="AboutMe" className="text-white ml-4 xl:gap-5 sm:py-1 xl:px-1 font-lato">
+              <div id="AboutMe" className="text-white ml-2 xl:gap-5 sm:py-1 xl:px-1 font-lato">
                 <Fade
                   duration={2000}
                 >

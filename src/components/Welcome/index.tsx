@@ -1,12 +1,12 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import avatar from '../../../public/assets/avatar.png'
 import { TypeAnimation } from 'react-type-animation';
 import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
 import gif from '../../../public/assets/video.gif'
+import Button from 'react-bootstrap/Button';
 
 
 const Welcome = () => {
@@ -17,7 +17,7 @@ const Welcome = () => {
 
     return (
         <>
-            <div id="inicio" className="pt-12 sm:mt-8 lg:mt-12 xl:mt-16">
+            <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">
@@ -63,16 +63,14 @@ const Welcome = () => {
                                 duration={2000}
                                 direction='down'
                             >
-                                <button className="
-                        p-4 px-5 py-3 rounded-lg uppercase
-                        bg-[#233949] font-lato 
-                        font-semibold text-[#fff] hover:text-[#c5c2c2]
-                          active:bg-slate-800
-                         ">
-                                    <a href="www.google.com.br">
-                                        download cv
-                                    </a>
-                                </button>
+                                <Button
+                                    href="www.google.com.br"
+                                    variant="dark"
+                                    size="lg"
+                                    className="uppercase"
+                                >
+                                    Download CV
+                                </Button>
                             </Fade>
                         </div>
                     </div>

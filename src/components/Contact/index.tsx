@@ -2,89 +2,105 @@
 import React from 'react'
 import { BsTelephone } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
-import { FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp, FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { FaInstagram, FaTelegramPlane, FaWhatsapp, FaHtml5, FaCss3Alt, FaReact, FaLinkedinIn } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
-  return (
-    <div>
-        <div>
-            CONTATO
-        </div>
-        
-        {/* formulário para envio de mensagem */}
-        <div>
-            <form action="">
-                <label htmlFor="">
-                    Nome:
-                    <input type="text" />
-                </label>
-                <label htmlFor="">
-                    Email:
-                    <input type="email" />
-                </label>
-                <input type="textarea" width={40}/>
-                <input type="submit" />
-            </form>
-            <br />
-
-            <br />
-            <div>
-            <div>
-                {/* email */}
-                <TfiEmail/>
-                
-                {/* telefones */}
-                <BsTelephone/>
-
-                {/* telefones */}
-                <BsTelephone/>
-
+    return (
+        <>
+            <div id="contato" className="text-[#ffffff] font-roboto pt-[60px] pb-[60px] flex items-center justify-center">
+                <Container>
+                    <Row className="mb-5 mt-3">
+                        <Col lg='8'>
+                            <h1 className="display-4">
+                                Contato
+                            </h1>
+                        </Col>
+                    </Row>
+                    <Row className="sec_sp flex justify-evenly mb-20">
+                        <Col lg='5' className="">
+                            <address>
+                                <p className="flex items-center">
+                                    <TfiEmail className="mr-3 text-[#d0d0d0]" />
+                                    euvictor_h@hotmail.com
+                                </p>
+                                <p className="flex items-center">
+                                    <BsTelephone className="mr-3 text-[#d0d0d0]" />
+                                    +55 21 9 8026-0633
+                                </p>
+                                <p className="flex items-center">
+                                    <BsTelephone className="mr-3 text-[#d0d0d0]" />
+                                    +55 21 9 9180-1281
+                                </p>
+                            </address>
+                            <br />
+                            <hr />
+                            <div className="flex items-center justify-start mt-20">
+                                <div className="bg-[#dad7d7] rounded-full p-2 ml-1">
+                                    <FaInstagram className="w-4 h-4 text-[#000]" />
+                                </div>
+                                <div className="bg-[#dad7d7] rounded-full p-2 ml-1">
+                                    <FaLinkedinIn className="w-4 h-4 text-[#000]" />
+                                </div>
+                                <div className="bg-[#dad7d7] rounded-full p-2 ml-1">
+                                    <FaTelegramPlane className="w-4 h-4 text-[#000]" />
+                                </div>
+                                <div className="bg-[#dad7d7] rounded-full p-2 ml-1">
+                                    <FaWhatsapp className="w-4 h-4 text-[#000]" />
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg='7' className="d-flex align-items-center">
+                            <form className="contact_form w-96">
+                                <Row>
+                                    <Col lg='6' className="form-group">
+                                        <input className="form-control"
+                                            id="name"
+                                            name="nome"
+                                            placeholder='Nome'
+                                            type="text"
+                                        />
+                                    </Col>
+                                    <Col lg='6' className="form-group">
+                                        <input className="form-control"
+                                            id="email"
+                                            name="email"
+                                            placeholder='Email'
+                                            type="email"
+                                        />
+                                    </Col>
+                                </Row>
+                                <br />
+                                <textarea
+                                    className="form-control rounded-0" id="message"
+                                    name="message"
+                                    placeholder='Message'
+                                    rows={5}
+                                >
+                                </textarea>
+                                <br />
+                                <Row>
+                                    <Col lg="12" className="form-group">
+                                        <button className="bg-[#fff] text-black rounded-md cursor-pointer p-2 active:bg-[#dadada]"
+                                            type="submit">
+                                            Enviar
+                                        </button>
+                                    </Col>
+                                </Row>
+                            </form>
+                        </Col>
+                    </Row>
+                </Container>
+                <br />
             </div>
-            
-            {/* icones de contato */}
-            <div>
-                {/* instagram */}
-                <div>
-                <a href=""><FaInstagram/></a>
-                </div>      
-
-                {/* linkedin */}
-                <div>
-                <a href=""><FaLinkedin/></a>
-                </div>                
-                
-                {/* Whatsapp */}
-                <div>
-                <a href=""><FaWhatsapp/></a>
-                </div>        
-
-                {/* telegram */}
-                <div>
-                <a href=""><FaTelegramPlane/></a>
-                </div>  
-            </div>
-            </div>
-        <hr/>
-        {/* icones tecnologias usadas */}
-        <div className="">
-            <p className="w-full items-center justify-center ">Tecnologias utilizadas para o desenvolvimento do portfólio</p>
-            <br />
-            <div className="flex items-center justify-center w-full m-1">
-            <FaHtml5 className="w-8 h-8 text-[#233949e8] ml-1"/>
-            <FaCss3Alt className="w-8 h-8 text-[#233949e8] ml-1"/>
-            <FaReact className="w-8 h-8 text-[#233949e8] ml-1"/>
-            <SiNextdotjs className="w-8 h-8 text-[#233949e8] ml-1"/>
-            <SiTailwindcss className="w-8 h-8 text-[#233949e8] ml-1"/>
-
-            </div>
-        </div>
-
-        </div>
-    
-    </div>
-  )
+            {/* <div className="flex items-center justify-start font-lato bg-[#000000]">
+                <h6 className="m-1 text-[#c2bfbf]">
+                    Portfólio desenvolvido por Victor Lopes
+                </h6>
+            </div> */}
+        </>
+    )
 };
 
 

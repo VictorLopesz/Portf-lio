@@ -7,7 +7,6 @@ import { Fade } from 'react-awesome-reveal';
 
 import jogoMemoria from '../../../public/assets/imgProjetos/JogoMemoria.png';
 import jogoMario from '../../../public/assets/imgProjetos/mario-game.png';
-import quiz from '../../../public/assets/imgProjetos/quiz.png';
 import biblioteca from '../../../public/assets/imgProjetos/biblioteca.jpeg';
 import calculadoraGorjeta from '../../../public/assets/imgProjetos/calculadoraGorjetas.png';
 import linktree from '../../../public/assets/imgProjetos/linktree.png';

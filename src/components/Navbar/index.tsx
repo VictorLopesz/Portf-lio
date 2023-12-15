@@ -13,9 +13,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { BiSolidContact } from "react-icons/bi";
 
-
-
-const Navbar = ({ isScrolled }:any) => {
+const Navbar = ({ isScrolled }: any) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeLink, setActiveLink] = useState("inicio");
 
@@ -25,7 +23,7 @@ const Navbar = ({ isScrolled }:any) => {
         setMenuOpen(!menuOpen);
     };
 
-    const handleLinkClick = (link:any) => {
+    const handleLinkClick = (link: any) => {
         setActiveLink(link);
         setMenuOpen(false);
     };
@@ -38,20 +36,20 @@ const Navbar = ({ isScrolled }:any) => {
                     fixed z-50 w-full h-12 text-3xl font-barlow`}
         >
             <div className="flex justify-evenly items-center h-full sm:flex">
-                <div className="flex w-full justify-center items-center">
+                <div className="flex w-full justify-center items-center pb-2 pt-4">
                     <ul className="hidden sm:flex text-sm">
 
                         <Link
                             to="inicio"
                             smooth={true}
                             duration={500}
-                            spy={true}
-                            offset={-120}
+                            spy={false}
+                            offset={-130}
                         >
                             <li
                                 onClick={() => handleLinkClick("inicio")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "inicio" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        ${activeLink === "inicio" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <IoIosHome className="mr-1" />
@@ -64,13 +62,13 @@ const Navbar = ({ isScrolled }:any) => {
                             to="sobremim"
                             smooth={true}
                             duration={500}
-                            spy={true}
+                            spy={false}
                             offset={-45}
                         >
                             <li
                                 onClick={() => handleLinkClick("sobremim")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "sobremim" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        ${activeLink === "sobremim" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <IoPersonSharp className="mr-1" />
@@ -78,34 +76,45 @@ const Navbar = ({ isScrolled }:any) => {
                                 </div>
                             </li>
                         </Link>
-                            <Link
-                                to="projetos"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                offset={-80}
-                            >
-                                <li
-                                    onClick={() => handleLinkClick("projetos")}
-                                    className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "projetos" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                        <Link
+                            to="projetos"
+                            smooth={true}
+                            duration={500}
+                            spy={false}
+                            offset={-80}
+                        >
+                            <li
+                                onClick={() => handleLinkClick("projetos")}
+                                className={`p-2 md:px-6 text-center cursor-pointer 
+                                        ${activeLink === "projetos" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
-                                    <div className="flex items-center justify-evenly">
-                                        <BsPersonWorkspace className="mr-1" />
-                                        Projetos
-                                    </div>
-                                </li>
-                            </Link>
+                                <div className="flex items-center justify-evenly">
+                                    <BsPersonWorkspace className="mr-1" />
+                                    Projetos
+                                </div>
+                            </li>
+                        </Link>
+                        <Link
+                            to="contato"
+                            smooth={true}
+                            duration={500}
+                            spy={false}
+                            offset={-80}
+                            activeClass="active"
+
+                        >
+
                             <li
                                 onClick={() => handleLinkClick("cursos")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "cursos" ? "border-b-2 border-[#457191] text-semibold text-[#457191]" : ""}
+                                        ${activeLink === "cursos" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <BiSolidContact className="mr-1" />
                                     Contato
                                 </div>
                             </li>
+                        </Link>
                     </ul>
                 </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
@@ -134,7 +143,7 @@ const Navbar = ({ isScrolled }:any) => {
                             to="inicio"
                             smooth={true}
                             duration={500}
-                            spy={true}
+                            spy={false}
                             offset={-120}
                         >
                             <li onClick={() => setMenuOpen(false)}
@@ -162,6 +171,8 @@ const Navbar = ({ isScrolled }:any) => {
                             duration={500}
                             spy={true}
                             offset={-80}
+                            activeClass="active"
+
                         >
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#535353]"
@@ -169,13 +180,22 @@ const Navbar = ({ isScrolled }:any) => {
                                 <BsPersonWorkspace className="m-2" /> Projetos
                             </li>
                         </Link>
-                        <a href="/">
+                        <Link
+                            to="contato"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            offset={-80}
+                            activeClass="active"
+
+                        >
+
                             <li onClick={() => setMenuOpen(false)}
                                 className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <BiSolidContact className="m-2" /> Contato
                             </li>
-                        </a>
+                        </Link>
                     </ul>
                 </div>
 
@@ -215,7 +235,7 @@ const Navbar = ({ isScrolled }:any) => {
             </div>
         </div >
     );
-    
+
 };
 
 
