@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
 import SlideShow from '../SlideShow';
 
-function Projetos() {
+const Projetos = () => {
   return (
     <div id="projetos">
       <div>

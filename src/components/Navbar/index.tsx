@@ -1,17 +1,16 @@
 'use client'
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
-import Image from 'next/image';
 import { BsFillPersonVcardFill, BsPersonWorkspace } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgCloseR } from 'react-icons/cg';
-import logotipo from '../../../public/assets/logotipo.png';
-import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
-import { PiGithubLogoFill } from "react-icons/pi";
-import { IoIosHome, IoIosMailUnread } from "react-icons/io";
-import { FaTelegramPlane } from "react-icons/fa";
+import { IoIosHome } from "react-icons/io";
+import { MdEmail } from 'react-icons/md';
 import { IoPersonSharp } from "react-icons/io5";
 import { BiSolidContact } from "react-icons/bi";
+import { Dropdown, DropdownTrigger, DropdownMenu, Button, DropdownItem } from "@nextui-org/react";
+import { FaGithub, FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa';
+
 
 const Navbar = ({ isScrolled }: any) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,10 +29,10 @@ const Navbar = ({ isScrolled }: any) => {
 
 
     return (
-        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl font-barlow fixed z-50 transition duration-150 ease-in'
+        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl fixed z-50 transition duration-150 ease-in'
             :
             'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
-                    fixed z-50 w-full h-12 text-3xl font-barlow`}
+        fixed z-50 w-full h-12 text-3xl`}
         >
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <div className="flex w-full justify-center items-center pb-2 pt-4">
@@ -52,7 +51,7 @@ const Navbar = ({ isScrolled }: any) => {
                                         ${activeLink === "inicio" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
-                                    <IoIosHome className="mr-1" />
+                                    <IoIosHome className="mr-3" />
                                     Início
                                 </div>
                             </li>
@@ -71,7 +70,7 @@ const Navbar = ({ isScrolled }: any) => {
                                         ${activeLink === "sobremim" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
-                                    <IoPersonSharp className="mr-1" />
+                                    <IoPersonSharp className="mr-3" />
                                     Sobre Mim
                                 </div>
                             </li>
@@ -89,7 +88,7 @@ const Navbar = ({ isScrolled }: any) => {
                                         ${activeLink === "projetos" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
-                                    <BsPersonWorkspace className="mr-1" />
+                                    <BsPersonWorkspace className="mr-3" />
                                     Projetos
                                 </div>
                             </li>
@@ -123,8 +122,8 @@ const Navbar = ({ isScrolled }: any) => {
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen text-white bg-[#000000] p-10 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
-                    "fixed left-[100%] top-0 p-10 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden "
+                    ? "fixed left-0 top-0 w-[55%] md:z-50 sm:hidden h-screen text-white bg-[#000000] p-4 ease-in overflow-x-auto overflow-y-hidden transition duration-75" :
+                    "fixed left-[100%] top-0 p-4 transition ease-out -translate-x-6 duration-200 overflow-y-auto overflow-x-hidden"
             }
             >
                 <div className="flex w-full items-center justify-end">
@@ -133,13 +132,15 @@ const Navbar = ({ isScrolled }: any) => {
                     </div>
                 </div>
                 <br />
-                <Image
+                <br />
+                <br />
+                {/* <Image
                     src={logotipo}
                     alt="logot"
-                    className="cursor-pointer" />
+                    className="cursor-pointer" /> */}
                 <div className="flex-col text-white text-sm">
                     <ul>
-                        <Link href="/"
+                        <Link
                             to="inicio"
                             smooth={true}
                             duration={500}
@@ -147,12 +148,12 @@ const Navbar = ({ isScrolled }: any) => {
                             offset={-120}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
+                                className="py-2 flex items-center transition duration-300 font-sansnarrow text-base ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <IoIosHome className="m-2" /> Início
+                                <IoIosHome className="mr-3 w-[20px] h-[20px]" /> Início
                             </li>
                         </Link>
-                        <Link href="/"
+                        <Link
                             to="sobremim"
                             smooth={true}
                             duration={500}
@@ -160,12 +161,12 @@ const Navbar = ({ isScrolled }: any) => {
                             offset={-60}
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition  duration-300 ease-in-out cursor-pointer active:text-[#535353]"
+                                className="py-2 flex items-center transition  duration-300 font-sansnarrow text-base ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BsFillPersonVcardFill className="m-2" /> Sobre Mim
+                                <BsFillPersonVcardFill className="mr-3 w-[20px] h-[20px]" /> Sobre Mim
                             </li>
                         </Link>
-                        <Link href="/"
+                        <Link
                             to="projetos"
                             smooth={true}
                             duration={500}
@@ -175,9 +176,9 @@ const Navbar = ({ isScrolled }: any) => {
 
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer  active:text-[#535353]"
+                                className="py-2 flex items-center transition duration-300 font-sansnarrow text-base ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BsPersonWorkspace className="m-2" /> Projetos
+                                <BsPersonWorkspace className="mr-3 w-[20px] h-[20px]" /> Projetos
                             </li>
                         </Link>
                         <Link
@@ -191,46 +192,28 @@ const Navbar = ({ isScrolled }: any) => {
                         >
 
                             <li onClick={() => setMenuOpen(false)}
-                                className="py-1 flex items-center transition duration-300 ease-in-out cursor-pointer active:text-[#535353]"
+                                className="py-2 flex items-center transition duration-300 font-sansnarrow text-base ease-in-out cursor-pointer active:text-[#535353]"
                             >
-                                <BiSolidContact className="m-2" /> Contato
+                                <BiSolidContact className="mr-3 w-[20px] h-[20px]" /> Contato
                             </li>
                         </Link>
                     </ul>
                 </div>
+                <div className="flex justify-center items-center w-full">
+                    <Dropdown>
+                        <DropdownTrigger>
+                            <Button
+                                variant="bordered"
+                            >
+                                <span className="text-white uppercase">Mídias Sociais</span>
+                            </Button>
+                        </DropdownTrigger>
+                        <DropdownMenu>
+                            <DropdownItem className="flex items-center justify-center"><MdEmail /><FaInstagram /><FaLinkedin /></DropdownItem>
+                            <DropdownItem className="flex items-center justify-center"><FaTelegramPlane /><FaWhatsapp /><FaGithub /></DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
 
-                <br />
-                <br />
-                <hr />
-                <br />
-
-                <div className="flex items-center justify-center w-full text-white font-NotoKawi py-1 pt-10">
-                    <span className="text-sm ">CONTATO</span>
-                </div>
-                <div className="items-center flex justify-center">
-                    <div className="flex items-center text-white mt-5 text-2xl">
-                        <a href={'https://github.com/VictorLopesz'}>
-                            <PiGithubLogoFill className="m-1 text-[28px] active:text-[#4a4949] transition duration-200 ease-in-out" />
-                        </a>
-
-                        <a href={'mailto:euvictor_h@hotmail.com'}>
-                            <IoIosMailUnread className="m-1 text-[30px] active:text-[#BD1D1B] transition duration-200 ease-in-out" />
-                        </a>
-
-
-                        <a href={'https://t.me/pleasevictor'}>
-                            <FaTelegramPlane className="m-1 text-[29px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
-                        </a>
-
-                        <a href={'https://www.linkedin.com/in/lopesvictorh/'}>
-                            <FaLinkedinIn className="m-1 text-[28px] active:text-[#0A66C2] transition duration-200 ease-in-out " />
-                        </a>
-
-                        <a href={'https://wa.me/5521980260633'}>
-                            <FaWhatsapp className="m-1 text-[28px] active:text-[#25D366] transition duration-200 ease-in-out" />
-                        </a>
-
-                    </div>
                 </div>
             </div>
         </div >

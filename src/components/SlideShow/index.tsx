@@ -132,7 +132,6 @@ export default function SlideShow() {
 
     return (
         <Fade
-            direction="down"
             duration={1000}
         >
             <div className="w-3/4 m-auto">
@@ -148,9 +147,7 @@ export default function SlideShow() {
                                     <p className="text-[15px] font-semibold text-[#89B3D1]">{d.titulo}</p>
                                     <p className="text-xs flex items-center justify-center font-lato">{d.review}</p>
 
-                                    <div className="flex items-center w-full justify-between
-                                    mb-5
-                                ">
+                                    <div className="flex items-center w-full justify-between">
 
                                         <div className="text-white flex justify-start items-center ml-6">
                                             {d.tecnologia}
