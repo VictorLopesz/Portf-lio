@@ -15,7 +15,7 @@
   }
 }
 
-.slick-slide > div {
+.slick-slide>div {
   margin: 0 10px;
 }
 
@@ -32,7 +32,7 @@
   @apply visible z-50;
 }
 
-@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -48,6 +48,18 @@
 .contact_form input.form-control {
   margin-bottom: 2rem;
 }
+
+.link-ativo {
+  text-decoration: none;
+  font-weight: bolder;
+  border: 1px;
+  border-bottom: 10px solid #457191;
+}
+
+.link-ativo:active {
+  border: 3px;
+}
+
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
