@@ -21,7 +21,7 @@ const Welcome = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">
-                            <span className="text-transparent bg-clip-text bg-[#233949]">
+                            <span className="text-transparent bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
                                     {" "}
@@ -46,7 +46,7 @@ const Welcome = () => {
                             <Fade
                                 duration={2000}
                             >
-                                <span className="font-semibold text-[#233949] text-justify">
+                                <span className="font-semibold text-[#2b6b98]] text-justify">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
                             </Fade>
@@ -60,17 +60,17 @@ const Welcome = () => {
 
                         <div className="flex items-center justify-center">
                             <Fade
-                                duration={2000}
-                                direction='down'
+                                duration={3000}
                             >
-                                <Button
+                                <button className="bg-[#0e151bb3] border-slate-400 p-4 rounded-md">
+                                <a
                                     href="www.google.com.br"
-                                    variant="dark"
-                                    size="lg"
-                                    className="uppercase"
+                                    className="text-white font-semibold border no-underline text-current"
+                                    target="_blank"
                                 >
                                     Download CV
-                                </Button>
+                                </a>
+                                    </button>
                             </Fade>
                         </div>
                     </div>

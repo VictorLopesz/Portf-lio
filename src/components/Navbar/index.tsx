@@ -27,7 +27,7 @@ const Navbar = ({ isScrolled }: any) => {
     };
 
     return (
-        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-3xl fixed z-50 transition duration-150 ease-in'
+        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white text-[14px] fixed z-50 transition duration-150 ease-in'
             :
             'bg-[#F2F2F2] text-black transition duration-300 ease-out'} 
         fixed z-50 w-full h-12 text-3xl`}
@@ -40,8 +40,10 @@ const Navbar = ({ isScrolled }: any) => {
                             to="inicio"
                             smooth={true}
                             duration={500}
-                            spy={false}
+                            spy={true}
                             offset={-130}
+                            activeClass="link-ativo"
+
                         >
                             <li
                                 onClick={() => handleLinkClick("inicio")}
@@ -59,8 +61,10 @@ const Navbar = ({ isScrolled }: any) => {
                             to="sobremim"
                             smooth={true}
                             duration={500}
-                            spy={false}
+                            spy={true}
                             offset={-45}
+                            activeClass="link-ativo"
+
                         >
                             <li
                                 onClick={() => handleLinkClick("sobremim")}
@@ -77,8 +81,10 @@ const Navbar = ({ isScrolled }: any) => {
                             to="projetos"
                             smooth={true}
                             duration={500}
-                            spy={false}
+                            spy={true}
                             offset={-80}
+                            activeClass="link-ativo"
+
                         >
                             <li
                                 onClick={() => handleLinkClick("projetos")}
@@ -95,15 +101,15 @@ const Navbar = ({ isScrolled }: any) => {
                             to="contato"
                             smooth={true}
                             duration={500}
-                            spy={false}
+                            spy={true}
                             offset={-80}
                             activeClass="link-ativo"
                         >
 
                             <li
-                                onClick={() => handleLinkClick("cursos")}
+                                onClick={() => handleLinkClick("contato")}
                                 className={`p-2 md:px-6 text-center cursor-pointer 
-                                        ${activeLink === "cursos" ? "" : ""}
+                                        ${activeLink === "contato" ? "" : ""}
                                         hover:text-[#6375b6] transition duration-500 ease-in-out`}>
                                 <div className="flex items-center justify-evenly">
                                     <BiSolidContact className="mr-1" />
@@ -119,7 +125,7 @@ const Navbar = ({ isScrolled }: any) => {
             </div>
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[93%] md:z-50 p-3 rounded-r-lg sm:hidden h-screen transform -translate-x-0 text-white bg-[#000000] ease-in-out overflow-x-auto overflow-y-hidden transition duration-150" :
+                    ? "fixed left-0 top-0 w-[93%] md:z-50 p-3 rounded-r-lg sm:hidden h-screen transform translate-x-0 text-white bg-[#000000] ease-in-out overflow-x-auto overflow-y-hidden transition duration-150" :
                     "fixed left-[100%] top-0 p-4 rounded-r-lg ease-in-out transition -translate-x-6 duration-200 overflow-y-hidden overflow-x-auto"
             }
             >
@@ -146,7 +152,7 @@ const Navbar = ({ isScrolled }: any) => {
 
                         >
                             <li onClick={() => setMenuOpen(false)}
-                                className="mt-4 mb-3 flex items-center text-[#cfcccc] transition duration-300 justify-start  text-[14px] ease-in-out cursor-pointer active:text-[#535353]"
+                                className="mt-4 mb-3 flex items-center text-[#cfcccc] transition duration-300 justify-start text-[14px] ease-in-out cursor-pointer active:text-[#535353]"
                             >
                                 <IoHomeOutline className=" -ml-6 text-[#88c2df] mr-4 w-[20px] h-[20px]" />
                                 <span className="mt-1">
@@ -215,18 +221,26 @@ const Navbar = ({ isScrolled }: any) => {
                 <span className="text-[#939393] ml-6 text-[12px] font-bold uppercase -pl-2">contato</span>
 
                 <div className="grid grid-cols-1 ml-6">
+                <a href="mailto:euvictor_h@hotmail.com" target="_blank" className="no-underline text-current">
                     <div className="w-full flex items-center">
                         <IoMailOutline className="w-[20px] h-[20px] mr-4 ml-2 text-[#88c2df]" />
                         <span className="text-[#939393] text-[13px]">euvictor_h@hotmail.com</span>
                     </div>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5521980260633" target="_blank" className="no-underline text-current">
                     <div className="w-full flex items-center">
                         <FaWhatsapp className="w-[20px] h-[20px] mr-4 ml-2 text-[#88c2df]" />
                         <span className="text-[#939393] text-[13px]">+55 21 9 8026-0633</span>
                     </div>
+                    </a>
+
+                    <a href="https://t.me/pleasevictor" target="_blank" className="no-underline text-current">
                     <div className="w-full flex items-center">
                         <PiTelegramLogoDuotone className="w-[20px] h-[20px] mr-4 ml-2 text-[#88c2df]" />
                         <span className="text-[#939393] text-[13px]">@pleasevictor</span>
                     </div>
+                    </a>
                 </div>
                 <hr />
                 <span className="ml-6 text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
