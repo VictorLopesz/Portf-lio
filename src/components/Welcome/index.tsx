@@ -46,7 +46,7 @@ const Welcome = () => {
                             <Fade
                                 duration={2000}
                             >
-                                <span className="font-semibold text-[#2b6b98]] text-justify">
+                                <span className="font-semibold text-[#2b6b98] text-justify">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
                             </Fade>
@@ -62,10 +62,10 @@ const Welcome = () => {
                             <Fade
                                 duration={3000}
                             >
-                                <button className="bg-[#0e151bb3] border-slate-400 p-4 rounded-md">
+                                <button className="bg-[#2b5374] font-semibold py-3 px-6 active:shadow-md active:bg-[#1f3242] rounded-md shadow-xl">
                                 <a
                                     href="www.google.com.br"
-                                    className="text-white font-semibold border no-underline text-current"
+                                    className="text-gray-100 font-semibold no-underline text-current"
                                     target="_blank"
                                 >
                                     Download CV
