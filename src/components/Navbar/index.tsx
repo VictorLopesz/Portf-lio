@@ -231,9 +231,11 @@ const Navbar = ({ isScrolled }: any) => {
                     <hr />
                     <br />
 
-                    <span className="text-[#939393] ml-6 text-[12px] font-bold uppercase -pl-2">contato</span>
-                    <div className="grid grid-cols-1 ml-6">
+                    <span className="text-[#939393]  text-[12px] font-bold uppercase -pl-2">contato</span>
+                    <div className="grid grid-cols-1 ">
                         <br />
+                        <br />
+
                         <a href="mailto:euvictor_h@hotmail.com" target="_blank" className="no-underline text-current">
                             <div className="w-full flex items-center">
                                 <IoMailOutline className="w-[20px] h-[20px] mr-4 ml-2 text-[#88c2df]" />
@@ -260,7 +262,7 @@ const Navbar = ({ isScrolled }: any) => {
 
 
                     <hr />
-
+                    <br />
                     <span className="ml-6 text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
                     <br />
                     <br />
