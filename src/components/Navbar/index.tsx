@@ -147,7 +147,7 @@ const Navbar = ({ isScrolled }: any) => {
                     Portfólio
                 </h1>
                 <div className="flex-col mt-9 text-white text-xs">
-                    <ul className="ml-10">
+                    <ul className="ml-8">
                         <Link
                             to="inicio"
                             smooth={true}
@@ -225,6 +225,7 @@ const Navbar = ({ isScrolled }: any) => {
                             </li>
                         </Link>
                     </ul>
+                    <br />
                     <hr />
                     <br />
 
