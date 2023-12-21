@@ -146,8 +146,8 @@ const Navbar = ({ isScrolled }: any) => {
                     <FaCode className="mr-2 text-[#33b0cc]" />
                     Portfólio
                 </h1>
-                <div className="flex-col mt-9 text-white text-xs pl-5">
-                    <ul>
+                <div className="flex-col mt-9 text-white text-xs">
+                    <ul className="ml-3">
                         <Link
                             to="inicio"
                             smooth={true}
@@ -258,6 +258,7 @@ const Navbar = ({ isScrolled }: any) => {
                     </div>
                     <br />
                     <hr />
+                    <br />
                     <br />
                     <span className="ml-6 text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
                     <br />
