@@ -53,7 +53,7 @@ const ABOUT_ME = [
           <div>
             <ul>
               <li>Git</li>
-              <li className="underline text-[#b0cadd]"> <a target="_blank" href="https://github.com/VictorLopesz">GitHub</a></li>
+              <li className="text-[#b0cadd]"> <a target="_blank" href="https://github.com/VictorLopesz" className="no-underline text-current font-semibold">GitHub</a></li>
             </ul>
           </div>
 
@@ -122,7 +122,7 @@ export default function AboutMe() {
                 direction="down"
                 duration={1000}
               >
-                <h1 className="text-[#5e91b6] font-lato font-bold mb-2 text-2xl">Sobre Mim...</h1>
+                <h1 className="text-[#5e91b6] ml-2 mt-2 sm:mt-3 font-lato font-bold mb-2 text-2xl">Sobre Mim...</h1>
               </Fade>
               <Fade
                 direction="left"
@@ -139,7 +139,7 @@ export default function AboutMe() {
                 </p>
               </Fade>
 
-              <div id="AboutMe" className="text-white ml-2 xl:gap-5 sm:py-1 xl:px-1 font-lato">
+              <div id="AboutMe" className="text-white xl:gap-5 sm:py-1 xl:px-1 font-semibold font-lato">
                 <Fade
                   duration={2000}
                 >

@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
 import gif from '../../../public/assets/video.gif'
-import Button from 'react-bootstrap/Button';
+import { MdOutlineFileDownload } from 'react-icons/md';
 
 
 const Welcome = () => {
@@ -62,15 +62,16 @@ const Welcome = () => {
                             <Fade
                                 duration={3000}
                             >
-                                <button className="bg-[#2b5374] font-semibold py-3 px-6 active:shadow-md active:bg-[#1f3242] rounded-md shadow-xl">
-                                <a
-                                    href="www.google.com.br"
-                                    className="text-gray-100 font-semibold no-underline text-current"
-                                    target="_blank"
-                                >
-                                    Download CV
-                                </a>
-                                    </button>
+                                <button className="text-white bg-gradient-to-br from-blue-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-sm px-4 py-2.5 transition-transform  text-center me-2 mb-2">
+                                    <a
+                                        href="www.google.com.br"
+                                        className="no-underline text-current uppercase font-bold flex justify-center items-center"
+                                        target="_blank"
+                                    >
+                                        <MdOutlineFileDownload className="w-7 h-7 ml-2"/>
+                                        Download CV
+                                    </a>
+                                </button>
                             </Fade>
                         </div>
                     </div>
