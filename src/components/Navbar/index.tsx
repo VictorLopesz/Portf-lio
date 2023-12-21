@@ -33,10 +33,7 @@ const Navbar = ({ isScrolled }: any) => {
 
             <div className="flex justify-evenly items-center h-full sm:flex">
                 <h1 className="flex text-[#5e6364] ml-12 mt-2 justify-center text-xl items-center font-semibold">
-                    <FaCode className="mr-2 text-[#33b0cc]" />
-                    <span className="justify-self-center">
-                        Portfólio
-                    </span>
+                    <FaCode size={26} className="mr-2 text-[#33b0cc]" />
                 </h1>
 
                 <div className="flex w-full justify-end mr-52 items-center mt-3">
@@ -129,13 +126,13 @@ const Navbar = ({ isScrolled }: any) => {
                     </ul>
                 </div>
                 <div onClick={handleNav} className="md:hidden cursor-pointer mr-8">
-                    <GiHamburgerMenu size={25} className="mr-16 mt-2 transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
+                    <GiHamburgerMenu size={25} className="mr-8 mt-2 transition duration-300 ease-in-out text-[#a09f9f] active:text-[#c35555]" />
                 </div>
             </div>
             <div className={
                 menuOpen
                     ? "fixed left-0 top-0 w-[100%] md:z-50 p-4 sm:hidden h-screen transform translate-x-0 text-white bg-[#000000] ease-in overflow-x-auto overflow-y-hidden transition duration-150" :
-                    "fixed left-[100%] top-0 p-4 ease-in transition -translate-x-6 duration-200 overflow-y-hidden overflow-x-auto"
+                    "fixed left-[110%] top-0 p-4 ease-in transition -translate-x-6 duration-200 overflow-y-hidden overflow-x-auto"
             }
             >
                 <div className="flex pr-2 w-full items-center justify-end">
@@ -259,8 +256,7 @@ const Navbar = ({ isScrolled }: any) => {
                             </div>
                         </a>
                     </div>
-
-
+                    <br />
                     <hr />
                     <br />
                     <span className="ml-6 text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
