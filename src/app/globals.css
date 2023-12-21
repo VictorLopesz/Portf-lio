@@ -51,7 +51,7 @@
 
 .link-ativo {
   text-decoration: none;
-  font-weight: bold;
+  color: #33B0CC;
 }
 
 .link-ativo:active {
