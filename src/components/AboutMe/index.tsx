@@ -188,8 +188,6 @@ export default function AboutMe() {
         </div>
       <br />
       <br />
-      <br />
-      <br />
       </section >
     </div>
   )

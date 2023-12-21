@@ -1,20 +1,11 @@
-// 'use client'
-// import React from 'react'
-// import { BsTelephone } from 'react-icons/bs';
-// import { TfiEmail } from 'react-icons/tfi';
-// import { FaInstagram, FaTelegramPlane, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
-// import { Container, Row, Col } from 'react-bootstrap';
+'use client'
+import React from 'react'
+import { BiSolidArrowToRight } from 'react-icons/bi'
 
-// const Contact = () => {
-//     return (
-//         <>
-//             <div>
+export default function Contact() {
+    return (
+        <div className="w-full bg-primary/30">
 
-//             </div>
-//         </>
-//     )
-// };
-
-
-
-// export default Contact;
+        </div>
+    )
+}

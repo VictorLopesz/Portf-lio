@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar"
 import Welcome from "@/components/Welcome"
 import AboutMe from "@/components/AboutMe"
 import Projetos from "@/components/Projetos"
-// import Contact from "@/components/Contact"
+import Contact from "@/components/Contact"
 
 
 const Home = () => {
@@ -44,13 +44,10 @@ const Home = () => {
         <div className="w-full flex items-center justify-center bg-gradient-to-b from-black to-[#233949]">
           <div className="container py-2 w-[90%]">
             <Projetos />
-            <br />
           </div>
         </div>
         <div className="w-full bg-gradient-to-b from-[#233949] to-[#000000]">
-          <div className="container py-2 h-screen w-[100%]">
-            {/* <Contact /> */}
-          </div>
+            <Contact />
         </div>
       </div>
     </>

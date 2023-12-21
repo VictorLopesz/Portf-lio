@@ -191,7 +191,7 @@ const Navbar = ({ isScrolled }: any) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            offset={-80}
+                            offset={-90}
                             activeClass="link-ativo"
                             scrolling='false'
                         >

@@ -18,7 +18,6 @@ const Welcome = () => {
     return (
         <>
             <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16">
-                <br />
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">

@@ -68,8 +68,8 @@ const data = [
             <div className="flex justify-center items-center">
                 <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
                 <SiTailwindcss className="w-5 h-5  mr-1 text-[#1DC0CD] " />
-                <br />
-                <FaReact className="w-5 h-5  mr-1 text-[#087EA4] " />
+                <br/>
+                <FaReact className="w-5 h-5  mr-1 text-[#087EA4] "/>
                 <TbBrandNextjs className="w-5 h-5  mr-1 text-[#ffffff] " />
 
             </div>
@@ -88,9 +88,9 @@ const data = [
             <div className="flex justify-center items-center">
                 <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
                 <SiPhp className=" w-5 h-5 mr-1 text-[#7B7FB5]" />
-                <br />
+                <br/>
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
-                <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]" />
+                <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]"/>
 
             </div>
     },
@@ -135,16 +135,16 @@ export default function SlideShow() {
             duration={1000}
         >
             <div className="w-3/4 m-auto">
-                <div className="mt-20">
+                <div className="">
                     <Slider {...settings}>
 
                         {data.map((d: any, index) => (
-                            <div key={index} className="bg-[#111111] h-[400px] text-white rounded-md">
+                            <div key={index} className="bg-[#111111] h-[420px] text-white rounded-md">
                                 <div className=" h-56 flex justify-center items-center rounded-md">
                                     <Image src={d.img} alt="image1" className=" h-48 p-1" />
                                 </div>
-                                <div className="grid grid-cols-1 justify-self-center p-2">
-                                    <p className="text-[15px] justify-self-center font-semibold text-[#89B3D1]">{d.titulo}</p>
+                                <div className="grid grid-cols-1 p-2">
+                                    <p className="text-[15px] font-semibold text-[#89B3D1]">{d.titulo}</p>
                                     <p className="text-xs flex items-center justify-center font-lato">{d.review}</p>
 
                                     <div className="flex items-center w-full justify-between">
@@ -152,6 +152,7 @@ export default function SlideShow() {
                                         <div className="text-white flex justify-start items-center ml-6">
                                             {d.tecnologia}
                                         </div>
+
 
                                         <div className="grid grid-cols-2 p-2 gap-x-2 lg:grid-cols-2 xl:grid-cols-2">
 
@@ -181,7 +182,6 @@ export default function SlideShow() {
                         ))}
                     </Slider>
 
-                    <br />
                     <br />
                 </div>
             </div>
