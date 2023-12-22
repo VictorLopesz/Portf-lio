@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
 import gif from '../../../public/assets/video.gif'
 import { MdOutlineFileDownload } from 'react-icons/md';
+import { FaFilePdf } from 'react-icons/fa';
 
 
 const Welcome = () => {
@@ -17,7 +18,7 @@ const Welcome = () => {
 
     return (
         <>
-            <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16">
+            <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16 z-[50]">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">
@@ -62,14 +63,17 @@ const Welcome = () => {
                             <Fade
                                 duration={3000}
                             >
-                                <button className="text-white bg-gradient-to-br from-blue-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-sm px-4 py-2.5 transition-transform  text-center me-2 mb-2">
+                                <button
+                                    className="active:transform bg-gradient-to-r from-[#000000] to-[#253e4e] active:scale-95 relative overflow-hidden font-bold py-2 px-3 rounded-lg shadow-md transition-transform transform-gpu hover:shadow-xl  focus:outline-none focus:ring focus:border-blue-300">
                                     <a
                                         href="www.google.com.br"
-                                        className="no-underline text-current uppercase font-bold flex justify-center items-center"
+                                        className="no-underline text-[#d9d9d9] text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
-                                        <MdOutlineFileDownload className="w-7 h-7 ml-2"/>
-                                        Download CV
+                                        <FaFilePdf className="w-7 h-7 mr-3" />
+                                        <span>
+                                            Download CV
+                                        </span>
                                     </a>
                                 </button>
                             </Fade>

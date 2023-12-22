@@ -68,8 +68,8 @@ const data = [
             <div className="flex justify-center items-center">
                 <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
                 <SiTailwindcss className="w-5 h-5  mr-1 text-[#1DC0CD] " />
-                <br/>
-                <FaReact className="w-5 h-5  mr-1 text-[#087EA4] "/>
+                <br />
+                <FaReact className="w-5 h-5  mr-1 text-[#087EA4] " />
                 <TbBrandNextjs className="w-5 h-5  mr-1 text-[#ffffff] " />
 
             </div>
@@ -88,9 +88,9 @@ const data = [
             <div className="flex justify-center items-center">
                 <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
                 <SiPhp className=" w-5 h-5 mr-1 text-[#7B7FB5]" />
-                <br/>
+                <br />
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
-                <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]"/>
+                <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]" />
 
             </div>
     },
@@ -134,7 +134,7 @@ export default function SlideShow() {
         <Fade
             duration={1000}
         >
-            <div className="w-3/4 m-auto">
+            <div className="w-3/4 m-auto z-[40]">
                 <div className="">
                     <Slider {...settings}>
 

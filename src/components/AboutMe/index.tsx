@@ -98,7 +98,7 @@ export default function AboutMe() {
   }
 
   return (
-    <div id="sobremim" className="bg-black">
+    <div id="sobremim" className="z-[40]">
 
       <section className="text-white -py-1">
 
