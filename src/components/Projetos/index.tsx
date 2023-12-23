@@ -5,7 +5,7 @@ import Skills from '../Skills';
 
 const Projetos = () => {
   return (
-    <div id="projetos">
+    <div id="projetos" className="mt-10">
 
       <div className="h-screen">
         <Skills />
