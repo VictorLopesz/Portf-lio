@@ -45,7 +45,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full flex items-center justify-center bg-gradient-to-b from-black to-[#233949]">
-          <div className="container w-[90%]">
+          <div className="container w-[90%] mt-10">
             <Projetos />
           </div>
         </div>
