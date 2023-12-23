@@ -92,7 +92,7 @@ const Welcome = () => {
                                     alt='gif'
                                     width={400}
                                     height={400}
-                                    className="rounded-full"
+                                    className="rounded-full invert"
                                 />
                             </div>
                         </Fade>
