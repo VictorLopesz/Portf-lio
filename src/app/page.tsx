@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <>
       <Navbar isScrolled={isScrolled} />
-      <div className="flex min-h-screen flex-col bg-[#fff]">
+      <div className="flex min-h-screen flex-col bg-black">
         <div className="w-full h-full flex items-center pt-10 md:pt-8 lg:pt-9 xl:pt-7 justify-center">
           <div className="container mx-auto w-[80%] z-[40]">
             <Welcome />
