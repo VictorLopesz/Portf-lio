@@ -67,7 +67,7 @@ const Welcome = () => {
                                     className="active:transform bg-white active:scale-95 relative overflow-hidden font-bold py-2 px-3 rounded-lg shadow-md transition-transform transform-gpu hover:shadow-xl  focus:outline-none focus:ring focus:border-blue-300">
                                     <a
                                         href="www.google.com.br"
-                                        className="no-underline text-white text-current flex justify-evenly items-center mt-2"
+                                        className="no-underline text-black text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
                                         <FaFilePdf className="w-7 h-7 mr-3" />
