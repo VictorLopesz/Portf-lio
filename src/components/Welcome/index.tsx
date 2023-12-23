@@ -21,7 +21,7 @@ const Welcome = () => {
             <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16 z-[50]">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
-                        <h1 className="text-black mb-4 text-3x1 lg:text-4xl font-extrabold">
+                        <h1 className="text-white mb-4 text-3x1 lg:text-4xl font-extrabold">
                             <span className="text-transparent text-5x1 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
@@ -43,7 +43,7 @@ const Welcome = () => {
                                 repeat={Infinity}
                             />
                         </h1>
-                        <p className="text-black text-base sm:text-lg mb-6 lg:text-xl font-roboto">
+                        <p className="text-white text-base sm:text-lg mb-6 lg:text-xl font-roboto">
                             <Fade
                                 duration={2000}
                             >
