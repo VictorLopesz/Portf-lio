@@ -25,7 +25,7 @@ const Navbar = ({ isScrolled }: any) => {
     };
 
     return (
-        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-[#7f7f82] fixed z-50 transition duration-150 ease-in'
+        <div id="nav" className={` ${isScrolled ? 'bg-[#000000] text-white fixed z-50 transition duration-150 ease-in'
             :
             'bg-black text-[#333334] transition duration-300 ease-out'} 
         fixed z-50 w-full h-12 text-3xl`}
