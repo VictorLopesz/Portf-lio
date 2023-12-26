@@ -15,11 +15,11 @@ import git from '../../../public/assets/git.png';
 import github from '../../../public/assets/github.png';
 
 const SkillData = [
-    html, css, js, php, nextjs, react
+    html, css, js, php, nextjs, react, html, css, js, php, nextjs, react
 ];
 
-const SkillData2 = [
-    tailwindcss, boostrap, mysql, git, github
+const SkillTecnology = [
+    tailwindcss, boostrap, mysql, git, github, tailwindcss, boostrap, mysql, git, github
 
 ];
 
@@ -35,7 +35,7 @@ export default function Skills() {
                             delay: 0,
                             disableOnInteraction: false
                         }}
-                        speed={5000}
+                        speed={4000}
                         modules={[Autoplay]}
                         className='max-w-[100%]'
                     >
@@ -48,18 +48,19 @@ export default function Skills() {
                         ))}
                     </Swiper>
                     <Swiper
-                    slidesPerView={5}
-                    loop={true}
-                    autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                        reverseDirection: true
-                    }}
-                    speed={5000}
-                    modules={[Autoplay]}
-                    className='max-w-[100%]'
+                        slidesPerView={5}
+                        loop={true}
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false,
+                            reverseDirection: true
+                        }}
+                        speed={4000}
+                        modules={[Autoplay]}
+                        className='max-w-[100%]'
+                        
                     >
-                        {SkillData2.map((img, index) => (
+                        {SkillTecnology.map((img, index) => (
                             <SwiperSlide key={index}>
                                 <div className="flex items-center justify-center">
                                     <img src={img.src} alt={`Skill ${index + 1}`} width={40} height={40} className="mb-2" />
