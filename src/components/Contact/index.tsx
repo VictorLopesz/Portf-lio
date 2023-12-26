@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
+import EmailSection from '../EmailSection'
 
 export default function Contact() {
     return (
-        <div className="">
-
+        <div className="z-[40]">
+            <EmailSection />
         </div>
     )
 }
