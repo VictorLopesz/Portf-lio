@@ -139,7 +139,7 @@ export default function SlideShow() {
                     <Slider {...settings}>
 
                         {data.map((d: any, index) => (
-                            <div key={index} className="bg-[#111111] h-[420px] text-white rounded-md">
+                            <div key={index} className="bg-[#111111] h-[400px] text-white rounded-md">
                                 <div className=" h-56 flex justify-center items-center rounded-md">
                                     <Image src={d.img} alt="image1" className=" h-48 p-1" />
                                 </div>

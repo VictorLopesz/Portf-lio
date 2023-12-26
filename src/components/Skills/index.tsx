@@ -1,14 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Image from 'next/image';
 import { Autoplay } from 'swiper/modules';
 import boostrap from '../../../public/assets/bootstrap.png';
-import html from '../../../public/assets/html.png';
-import css from '../../../public/assets/css.png';
+import html from '../../../public/assets/html5.png';
+import css from '../../../public/assets/css3.png';
 import js from '../../../public/assets/js.png';
 import php from '../../../public/assets/php.png';
-import nextjs from '../../../public/assets/next.png';
+import nextjs from '../../../public/assets/nextjs.png';
 import react from '../../../public/assets/react.png';
 import tailwindcss from '../../../public/assets/tailwindcss.png';
 import mysql from '../../../public/assets/mysql.png';
@@ -16,11 +15,12 @@ import git from '../../../public/assets/git.png';
 import github from '../../../public/assets/github.png';
 
 const SkillData = [
-    html, css, js, php, nextjs, react, tailwindcss, boostrap, mysql, git, github
+    html, css, js, php, nextjs, react
 ];
 
 const SkillData2 = [
-    html, css, js, php, nextjs, react, tailwindcss, boostrap, mysql, git, github
+    tailwindcss, boostrap, mysql, git, github
+
 ];
 
 export default function Skills() {
@@ -41,28 +41,28 @@ export default function Skills() {
                     >
                         {SkillData.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <div>
-                                    <Image src={img} alt={`Skill ${index + 1}`} className="flex w-14 h-15 items-center justify-center" />
+                                <div className="flex items-center justify-center">
+                                    <img src={img.src} alt={`Skill ${index + 1}`} width={40} height={40} className="mb-2" />
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                     <Swiper
-                        slidesPerView={5}
-                        loop={true}
-                        autoplay={{
-                            delay: 0,
-                            disableOnInteraction: false,
-                            reverseDirection: true
-                        }}
-                        speed={5000}
-                        modules={[Autoplay]}
-                        className='max-w-[100%]'
+                    slidesPerView={5}
+                    loop={true}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                        reverseDirection: true
+                    }}
+                    speed={5000}
+                    modules={[Autoplay]}
+                    className='max-w-[100%]'
                     >
                         {SkillData2.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <div>
-                                    <Image src={img} alt={`Skill ${index + 1}`} className="flex w-12 h-13 items-center justify-center" />
+                                <div className="flex items-center justify-center">
+                                    <img src={img.src} alt={`Skill ${index + 1}`} width={40} height={40} className="mb-2" />
                                 </div>
                             </SwiperSlide>
                         ))}
