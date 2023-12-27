@@ -3,11 +3,12 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { IoMailOutline } from 'react-icons/io5';
 import { MdEmail } from "react-icons/md";
 import { PiSubtitlesFill, PiTelegramLogoDuotone } from 'react-icons/pi';
+import Footer from '../Footer';
 
 const EmailSection = () => {
     return (
-        <>
-            <section className="grid md:grid-cols-2 mt-24 my-12 md:my-12 z-[40]">
+        <div className="h-screen">
+            <section id="contato" className="grid md:grid-cols-2 mt-24 my-12 md:my-12 z-[40] h-screen">
                 <div>
                     <h5 className="text-2xl font-bold text-white my-2">Contato</h5>
                 </div>
@@ -45,7 +46,7 @@ const EmailSection = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className=" flex items-center justify-center mt-2 gap-x-2.5 mb-2">
+                        <div className=" flex items-center justify-start ml-6 mt-2 gap-x-2.5 mb-2">
                             <a href="https://github.com/VictorLopesz" className="no-underline text-current">
                                 <FaGithub className="w-6 h-6 mt-1 text-[#8899de] hover:text-[#b0c0ff]" />
                             </a>
@@ -105,7 +106,7 @@ const EmailSection = () => {
                     </form>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

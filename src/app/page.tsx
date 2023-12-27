@@ -53,13 +53,8 @@ const Home = () => {
           <div className="container mx-auto w-[50%]">
             <Contact />
           </div>
-          <hr />
-          <div className="w-full bg-black z-[40]">
-            <div className="container w-[100%]">
-              <Footer />
-            </div>
-          </div>
         </div>
+        <Footer />
       </div>
     </>
   )
