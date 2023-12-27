@@ -6,7 +6,7 @@ import AboutMe from "@/components/AboutMe"
 import Projetos from "@/components/Projetos"
 import Contact from "@/components/Contact"
 import StarsCanvas from "@/components/StarsBackground"
-import Skills from "@/components/Skills"
+import Footer from "@/components/Footer"
 
 
 const Home = () => {
@@ -50,8 +50,14 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full bg-gradient-to-b from-[#233949] z-[40] to-[#000000]">
-          <div className="container mx-auto py-3 w-[70%]">
+          <div className="container mx-auto w-[50%]">
             <Contact />
+          </div>
+          <hr />
+          <div className="w-full bg-black z-[40]">
+            <div className="container w-[100%]">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>

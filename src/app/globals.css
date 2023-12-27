@@ -58,6 +58,13 @@
   border: 3px;
 }
 
+.input-placeholder::placeholder {
+  padding-left: 35px;
+}
+
+.input{
+  padding-left: 35px;
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
