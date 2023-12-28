@@ -21,7 +21,7 @@ const Welcome = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
                         <h1 className="text-white mb-4 text-3x1 md:text-3x1 lg:text-4xl font-extrabold">
-                            <span className="text-transparent text-5x1 md:mt-10 bg-clip-text bg-[#2b6b98]">
+                            <span className="text-transparent text-left text-5x1 md:mt-10 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
                                     {" "}
@@ -46,7 +46,7 @@ const Welcome = () => {
                             <Fade
                                 duration={2000}
                             >
-                                <span className="font-semibold text-[#2b6b98] text-justify">
+                                <span className="font-semibold text-[#2b6b98]">
                                     Seja bem-vindo ao meu portfólio!<br />
                                 </span>
                             </Fade>
@@ -63,11 +63,11 @@ const Welcome = () => {
                                 duration={3000}
                             >
                                 <button
-                                    className="items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md transition-transform duration-700 ease-in-out bg-slate-500">
+                                    className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-300 delay-150 hover:delay-300 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
                                     <a
                                         href="https://drive.google.com/file/d/1CAiwzSZdvX9NxXSodc2-ewTch18Mepo-/view"
 
-                                        className="no-underline text-[#282c31] text-current flex justify-evenly items-center mt-2"
+                                        className="no-underline text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
                                         <FaFilePdf size={25} className="mr-1"/>
