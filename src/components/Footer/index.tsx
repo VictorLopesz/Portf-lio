@@ -7,7 +7,7 @@ import brasil from '../../../public/assets/brasil.png';
 
 function Footer() {
     return (
-        <footer className="w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mx-4 my-4 sm:mx-6 md:mx-10 text-[#b7b7b7c4]">
+        <footer className="w-[90%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 mx-4 my-4 sm:mx-6 md:mx-10 text-[#b7b7b7c4]">
             <div className="text-center sm:text-left">
                 <p className="text-xs">
                     Portfólio desenvolvido por Victor Lopes
@@ -16,7 +16,7 @@ function Footer() {
 <br/>
             <div className="text-center sm:text-center text-xs">
                 <p className="-mt-2 mb-2">
-                    Teconologias usadas
+                    Teconologias usadas neste site
                 </p>
                 <p className="grid grid-cols-5 ">
                     <IoLogoCss3 size={25} />

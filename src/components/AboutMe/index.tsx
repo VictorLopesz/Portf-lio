@@ -11,7 +11,7 @@ const ABOUT_ME = [
     id: "Linguagens",
     content: (
 
-      <div className="grid grid-cols-2 mt-4">
+      <div className="grid grid-cols-2 mt-4 text-sm">
            <div>
             <ul className="">
               <li>HTML5</li>
@@ -35,7 +35,7 @@ const ABOUT_ME = [
     id: "Banco de Dados",
     content: (
 
-      <div className="mt-4">
+      <div className="mt-4 text-sm">
            <ul>
             <li>MySQL</li>
             <li>Oracle Database</li>
@@ -49,11 +49,11 @@ const ABOUT_ME = [
     id: "Versionamento",
     content: (
 
-      <div className="mt-4">
+      <div className="mt-4 text-sm">
           <div>
             <ul>
               <li>Git</li>
-              <li className="text-[#b0cadd]"> <a target="_blank" href="https://github.com/VictorLopesz" className="no-underline text-current font-semibold">GitHub</a></li>
+              <li className="text-[#b0cadd] text-sm"> <a target="_blank" href="https://github.com/VictorLopesz" className="no-underline text-current font-semibold border-b-[#7fabca]">GitHub</a></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@ const ABOUT_ME = [
     title: "QA/Tester",
     id: "QA/Tester",
     content:
-      <div className="grid grid-cols-2 gap-x-6 gap-y-4 mt-4">
+      <div className="grid grid-cols-2 gap-x-6 gap-y-4 mt-4 text-sm">
            <div className="">
             <span className="text-[#7fabca]">
               Testes:
@@ -128,7 +128,7 @@ export default function AboutMe() {
                 direction="left"
                 duration={1000}
               >
-                <p className="text-sm font-lato ml-2 lg:text-base text-justify">
+                <p className="text-sm font-medium ml-2 lg:text-base text-justify">
                   Me chamo Victor Lopes, um entusiasta da tecnologia.
                   Como desenvolvedor, busco a interseção entre criatividade e tecnologia para aprimorar
                   constantemente minhas habilidades. Estudo Análise e Desenvolvimento de Sistemas,
@@ -139,12 +139,12 @@ export default function AboutMe() {
                 </p>
               </Fade>
 
-              <div id="AboutMe" className="text-white xl:gap-5 sm:py-1 xl:px-1 font-semibold font-lato">
+              <div id="AboutMe" className="text-white xl:gap-5 sm:py-1 xl:px-1 ml-3 ">
                 <Fade
                   duration={2000}
                 >
                   <div className="mt-8 flex text-sm flex-row lg:text-base justify-start">
-                    <TabButton className="font-bold" 
+                    <TabButton className="" 
                       selectTab={() => handleTabChange("Linguagens")}
                       active={tab === "Linguagens"}
                     >
@@ -152,7 +152,7 @@ export default function AboutMe() {
                       <span>Linguagens</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton className="font-bold"
+                    <TabButton className=""
                       selectTab={() => handleTabChange("Banco de Dados")}
                       active={tab === "Banco de Dados"}
                     >
@@ -162,7 +162,7 @@ export default function AboutMe() {
                     </TabButton>
 
 
-                    <TabButton className="font-bold"
+                    <TabButton className=""
                       selectTab={() => handleTabChange("QA/Tester")}
                       active={tab === "QA/Tester"}
                     >
@@ -170,7 +170,7 @@ export default function AboutMe() {
                       <span>QA/Tester</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton className="font-bold"
+                    <TabButton className=""
                       selectTab={() => handleTabChange("Versionamento")}
                       active={tab === "Versionamento"}
                     >

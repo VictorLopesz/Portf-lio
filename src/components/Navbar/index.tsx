@@ -32,8 +32,8 @@ const Navbar = ({ isScrolled }: any) => {
         >
 
             <div className="flex justify-evenly items-center h-full sm:flex">
-                <h1 className="flex text-[#5e6364] ml-12 mt-2 justify-center text-xl items-center font-semibold">
-                    <FaCode size={26} className="mr-2 text-[#33b0cc]" />
+                <h1 className="flex text-[#5e6364] ml-16 mt-2 justify-center text-xl items-center font-semibold">
+                    <FaCode size={26} className="mr-2 mt-2 text-[#33b0cc]" />
                 </h1>
 
                 <div className="flex w-full justify-end mr-52 items-center mt-3">

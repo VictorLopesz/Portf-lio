@@ -1,11 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import { MdEmail } from "react-icons/md";
 import { PiSubtitlesFill, PiTelegramLogoDuotone } from 'react-icons/pi';
-import Footer from '../Footer';
+import emailjs from '@emailjs/browser';
 
 const EmailSection = () => {
+
+    const [email, setEmail] = useState('');
+    const [assunto, setAssunto] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
+    function sendEmail(e:any){
+        e.preventDefault();
+
+        if(email === '' || assunto === '' || mensagem === '' ){
+            alert("preencha todos os campos");
+            return;
+        }
+
+        const tamplateParems = {
+            email: email,
+            subject: assunto,
+            message: mensagem
+        }
+
+        emailjs.send("service_j9dyssl", "template_kw838fn", tamplateParems, "h-YTZxfYLd3ey5buZ")
+        .then((response:any) => {
+            console.log("Email enviado", response.status, response.text);
+            setEmail('');
+            setAssunto('');
+            setMensagem('');
+        }, (err:any) => {
+            console.log("ERRO: ", err)
+        })
+
+    }
+
+
+
     return (
         <div className="h-screen">
             <section id="contato" className="grid md:grid-cols-2 mt-24 my-12 md:my-12 z-[40] h-screen">
@@ -60,13 +93,16 @@ const EmailSection = () => {
                     </div>
                 </div>
                 <div>
-                    <form action="" className="flex flex-col gap-4">
+                    <form action="" className="flex flex-col gap-4" onSubmit={sendEmail}>
                         <div className="grid xl:grid-cols-1 gap-2">
                             <div className="relative">
                                 <input type="email"
                                     id="email"
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="pl-10 h-9 text-white bg-black w-full text-sm"
-                                    placeholder="exemplo@email.com" />
+                                    placeholder="exemplo@email.com"
+                                    value={email}
+                                />
                                 <div className="absolute inset-y-0 left-0 pl-3  
                     flex items-center border border-[#5E91B6] placeholder-[#000000] text-gray-200 text-sm rounded-sm w-full p-2'
                     pointer-events-none">
@@ -77,8 +113,11 @@ const EmailSection = () => {
                             <div className="relative">
                                 <input type="text"
                                     id="assunto"
+                                    onChange={(e) => setAssunto(e.target.value)}
                                     className="pl-10 h-9 text-white bg-black w-full text-sm "
-                                    placeholder="assunto" />
+                                    placeholder="assunto" 
+                                    value={assunto}
+                                    />
                                 <div className="absolute inset-y-0 left-0 pl-3  
                     flex items-center border border-[#5E91B6] placeholder-[#000000] text-gray-200 text-sm rounded-sm w-full p-2'
                     pointer-events-none">
@@ -89,10 +128,12 @@ const EmailSection = () => {
 
                         <textarea
                             id="mensagem"
+                            onChange={(e) => setMensagem(e.target.value)}
                             required
                             className='bg-[#000000] border border-[#5E91B6] placeholder-[#b8b7b7] text-gray-200 text-sm rounded-sm w-full p-2'
                             placeholder="Escreva aqui!"
                             rows={4} cols={50}
+                            value={mensagem}
                         />
 
                         <div className='justify-end items-center flex'>

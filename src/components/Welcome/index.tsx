@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
 import { Fade } from 'react-awesome-reveal';
 import gif from '../../../public/assets/video.gif'
-import { MdOutlineFileDownload } from 'react-icons/md';
 import { FaFilePdf } from 'react-icons/fa';
 
 
@@ -21,7 +20,7 @@ const Welcome = () => {
             <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16 z-[50]">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
-                        <h1 className="text-white mb-4 text-3x1 lg:text-4xl font-extrabold">
+                        <h1 className="text-white mb-4 text-3x1 md:text-3x1 lg:text-4xl font-extrabold">
                             <span className="text-transparent text-5x1 md:mt-10 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
@@ -64,13 +63,13 @@ const Welcome = () => {
                                 duration={3000}
                             >
                                 <button
-                                    className="items-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md transition-transform duration-700 ease-in-out bg-slate-500">
+                                    className="items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md transition-transform duration-700 ease-in-out bg-slate-500">
                                     <a
                                         href="www.google.com.br"
-                                        className="no-underline text-[#060606] text-current flex justify-evenly items-center mt-2"
+                                        className="no-underline text-[#282c31] text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
-                                        <FaFilePdf className="w-7 h-7 mr-3" />
+                                        <FaFilePdf size={25} className="mr-1"/>
                                         <span>
                                             Download CV
                                         </span>
