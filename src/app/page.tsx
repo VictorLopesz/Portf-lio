@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full bg-gradient-to-b from-[#233949] z-[40] to-[#000000]">
-          <div className="container mx-auto w-[50%]">
+          <div className="container mx-auto w-[90%]">
             <Contact />
           </div>
         </div>
