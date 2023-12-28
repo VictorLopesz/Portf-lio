@@ -15,9 +15,7 @@ function Footer() {
             </div>
 <br/>
             <div className="text-center sm:text-center text-xs">
-                <p className="-mt-2 mb-2">
-                    Teconologias usadas neste projeto:
-                </p>
+              
                 <p className="grid grid-cols-5 ">
                     <IoLogoCss3 size={25} />
                     <FaHtml5 size={25} />
