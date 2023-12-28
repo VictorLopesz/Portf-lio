@@ -13,6 +13,7 @@ function Footer() {
                     Portfólio desenvolvido por Victor Lopes
                 </p>
             </div>
+<br/>
             <div className="text-center sm:text-center text-xs">
                 <p className="-mt-2 mb-2">
                     Teconologias usadas
