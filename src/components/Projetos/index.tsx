@@ -7,7 +7,9 @@ const Projetos = () => {
   return (
     <div id="projetos" className="mt-10">
 
-      <div className="h-screen">
+      <div className="h-screen mt-10">
+        <br />
+        <br />
         <Skills />
         <SlideShow />
       </div>

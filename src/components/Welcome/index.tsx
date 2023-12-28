@@ -65,7 +65,7 @@ const Welcome = () => {
                                 <button
                                     className="items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md transition-transform duration-700 ease-in-out bg-slate-500">
                                     <a
-                                        href="www.google.com.br"
+                                        href="https://drive.google.com/file/d/1CAiwzSZdvX9NxXSodc2-ewTch18Mepo-/view"
                                         className="no-underline text-[#282c31] text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
