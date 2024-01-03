@@ -10,13 +10,16 @@ import jogoMario from '../../../public/assets/imgProjetos/mario-game.png';
 import biblioteca from '../../../public/assets/imgProjetos/biblioteca.jpeg';
 import calculadoraGorjeta from '../../../public/assets/imgProjetos/calculadoraGorjetas.png';
 import linktree from '../../../public/assets/imgProjetos/linktree.png';
+import loginCadastro from '../../../public/assets/imgProjetos/loginCadastro.png';
 
 
-import { FaEye, FaCode, FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { FaEye, FaCode, FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiPhp } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiMysql } from "react-icons/si";
+import { BsBootstrap } from "react-icons/bs";
+
 
 
 const data = [
@@ -92,6 +95,25 @@ const data = [
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
                 <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]" />
 
+            </div>
+    },
+    {
+        titulo: `Sistema de Login e Cadastro`,
+        review: `Sistema desenvolvido com PHP e MySQL para fazer login e cadastro em uma plataforma`,
+        img: loginCadastro,
+        repositorio: <a href="https://github.com/VictorLopesz/formLogineCadastroPHP" target="_blank" className="no-underline text-current">
+            <FaCode />
+        </a>,
+        // play: <a href="https://www.youtube.com/watch?v=tO6cmc-UGJM&ab_channel=VictorLopes" target="_blank" className="no-underline text-current">
+        //     <FaEye />
+        // </a>,
+        tecnologia:
+            <div className="flex justify-center items-center">
+                <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
+                <SiPhp className=" w-5 h-5 mr-1 text-[#7B7FB5]" />
+                <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
+                <SiMysql className="w-7 h-7 mr-1 text-[#c9d7de]" />
+                <FaBootstrap className="w-6 h-6 mr-1 text-[#8319FB]" />
             </div>
     },
     {
