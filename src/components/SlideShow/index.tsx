@@ -108,7 +108,7 @@ const data = [
         //     <FaEye />
         // </a>,
         tecnologia:
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center -ml-7">
                 <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
                 <SiPhp className=" w-5 h-5 mr-1 text-[#7B7FB5]" />
                 <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
@@ -167,7 +167,7 @@ export default function SlideShow() {
                                 </div>
                                 <div className="grid grid-cols-1 p-2">
                                     <p className="text-[15px] font-semibold text-[#89B3D1]">{d.titulo}</p>
-                                    <p className="text-xs flex items-center justify-center font-lato">{d.review}</p>
+                                    <p className="text-xs mb-2 flex items-center justify-center font-lato">{d.review}</p>
 
                                     <div className="flex items-center w-full justify-between">
 
