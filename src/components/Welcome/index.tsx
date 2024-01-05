@@ -20,7 +20,7 @@ const Welcome = () => {
             <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16 z-[50]">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
-                        <h1 className="text-white mb-4 md:text-sm lg:text-4xl font-extrabold">
+                        <h1 className="text-white mb-4 md:text-3xl text-2xl lg:text-5xl font-extrabold">
                             <span className="text-transparent md:mt-10 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
@@ -63,7 +63,7 @@ const Welcome = () => {
                                 duration={3000}
                             >
                                 <button
-                                    className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-300 delay-150 hover:delay-300 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
+                                    className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-150 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
                                     <a
                                         href="https://drive.google.com/file/d/1CAiwzSZdvX9NxXSodc2-ewTch18Mepo-/view"
 
