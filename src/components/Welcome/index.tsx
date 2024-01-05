@@ -20,7 +20,7 @@ const Welcome = () => {
             <div id="inicio" className="pt-8 sm:mt-8 lg:mt-12 xl:mt-16 z-[50]">
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                     <div className="place-self-center col-span-7 text-center sm:text-left">
-                        <h1 className="text-white mb-4 md:text-base text-[17px] xl:text-5xl lg:text-5xl font-extrabold">
+                        <h1 className="text-white mb-4 md:text-xl text-[19px] xl:text-5xl lg:text-5xl font-extrabold">
                             <span className="text-transparent font-extrabold md:mt-10 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
                                 <p>
