@@ -11,6 +11,7 @@ import biblioteca from '../../../public/assets/imgProjetos/biblioteca.jpeg';
 import calculadoraGorjeta from '../../../public/assets/imgProjetos/calculadoraGorjetas.png';
 import linktree from '../../../public/assets/imgProjetos/linktree.png';
 import loginCadastro from '../../../public/assets/imgProjetos/loginCadastro.png';
+import relogioDigital from '../../../public/assets/imgProjetos/relogioDigital.png';
 
 
 import { FaEye, FaCode, FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa';
@@ -18,7 +19,6 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiPhp } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiMysql } from "react-icons/si";
-import { BsBootstrap } from "react-icons/bs";
 
 
 
@@ -126,6 +126,23 @@ const data = [
             <FaCode />
         </a>,
         play: <a href="https://calculadoradegorjetasjs.vercel.app/" target="_blank" className="no-underline text-current">
+            <FaEye />
+        </a>,
+        tecnologia:
+            <div className="flex justify-center items-center">
+                <FaHtml5 className=" w-5 h-5  mr-1 text-[#F56B2E]" />
+                <FaCss3Alt className=" w-5 h-5  mr-1 text-[#33A1D5]" />
+                <IoLogoJavascript className=" w-5 h-5  mr-1 text-[#EFD81D]" />
+            </div>
+    },
+    {
+        titulo: `Relógio Digital`,
+        review: `Aplicação front-end de um relógio digital`,
+        img: relogioDigital,
+        repositorio: <a href="https://github.com/VictorLopesz/relogio-digital" target="_blank" className="no-underline text-current">
+            <FaCode />
+        </a>,
+        play: <a href="https://relogio-digital-theta.vercel.app/" target="_blank" className="no-underline text-current">
             <FaEye />
         </a>,
         tecnologia:
