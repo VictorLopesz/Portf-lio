@@ -23,7 +23,7 @@ const Welcome = () => {
                         <h1 className="text-white mb-4 text-4xl lg:text-4xl font-extrabold">
                             <span className="text-transparent text-4xl md:mt-10 bg-clip-text bg-[#2b6b98]">
                                 Olá, eu sou
-                                <p className="text-2xl md:absolute md:text-2xl">
+                                <p className="text-2xl md:absolute md:text-base">
                                     {" "}
                                 </p>
                             </span>
