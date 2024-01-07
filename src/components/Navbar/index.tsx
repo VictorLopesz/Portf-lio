@@ -261,7 +261,7 @@ const Navbar = ({ isScrolled }: any) => {
                     <hr />
                     <br />
                     <br />
-                    <span className="ml-6 text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
+                    <span className="text-[#939393] text-[12px] font-bold uppercase -pl-2">mídias sociais</span>
                     <br />
                     <br />
 
