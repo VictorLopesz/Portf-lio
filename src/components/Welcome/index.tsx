@@ -34,6 +34,8 @@ const Welcome = () => {
                                     1000,
                                     'Desenvolvedor front-end',
                                     1000,
+                                    'Quality Assurance',
+                                    1000,
                                     'Desenvolvedor back-end',
                                     1000,
                                 ]}
