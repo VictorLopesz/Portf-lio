@@ -21,8 +21,9 @@ const ABOUT_ME = [
           </div>
           <div>
             <ul>
+              <li>JavaScript</li>
               <li>Next Js</li>
-              <li>React Js</li>
+              <li>React</li>
               <li>PHP</li>  
             </ul>
           </div>
@@ -38,7 +39,6 @@ const ABOUT_ME = [
       <div className="mt-4 text-sm">
            <ul>
             <li>MySQL</li>
-            <li>Oracle Database</li>
           </ul>
 
       </div>
@@ -61,7 +61,7 @@ const ABOUT_ME = [
     )
   },
   {
-    title: "QA/Tester",
+    title: "Qualidade",
     id: "QA/Tester",
     content:
       <div className="grid grid-cols-2 gap-x-6 gap-y-4 mt-4 text-sm">
@@ -70,6 +70,7 @@ const ABOUT_ME = [
               Testes:
             </span>
             <ul>
+              <li>Manuais</li>
               <li>Funcionais</li>
               <li>Automatizados</li>
             </ul>
@@ -79,6 +80,7 @@ const ABOUT_ME = [
             <ul>
               <li>Postman</li>
               <li>Trello</li>
+              <li>Jira</li>
             </ul>
           </div>
 
