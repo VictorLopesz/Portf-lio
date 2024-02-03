@@ -60,7 +60,7 @@ const EmailSection = () => {
                                 <a href="mailto:euvictor_h@hotmail.com" target="_blank" className="no-underline text-current">
                                     <div className="w-full flex items-center mb-2">
                                         <IoMailOutline className="w-[20px] h-[20px] mr-4 ml-2 -m-12 text-[#88c2df]" />
-                                        <span className="text-[#939393] text-[13px] hover:text-white">euvictor_h@hotmail.com</span>
+                                        <span className="text-[#939393] text-[13px] hover:text-white">victorlopesz@outlook.com</span>
                                     </div>
                                 </a>
 
