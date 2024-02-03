@@ -237,7 +237,7 @@ const Navbar = ({ isScrolled }: any) => {
                         <a href="mailto:euvictor_h@hotmail.com" target="_blank" className="no-underline text-current">
                             <div className="w-full flex items-center">
                                 <IoMailOutline className="w-[20px] h-[20px] mr-4 ml-2 text-[#88c2df]" />
-                                <span className="text-[#939393] text-[13px]">euvictor_h@hotmail.com</span>
+                                <span className="text-[#939393] text-[13px]">victorlopesz@outlook.com</span>
                             </div>
                         </a>
                         <br />
