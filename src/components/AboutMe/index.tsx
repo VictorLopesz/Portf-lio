@@ -83,6 +83,7 @@ const ABOUT_ME = [
               <li>Cypress</li>
               <li>Postman</li>
               <li>Micro Focus ALM</li>
+              <li>Jira</li>
             </ul>
           </div>
 
@@ -147,8 +148,8 @@ export default function AboutMe() {
                 <Fade
                   duration={2000}
                 >
-                  <div className="mt-8 flex text-sm flex-row lg:text-base justify-start">
-                    <TabButton className="" 
+                  <div className="mt-8 flex font-semibold text-sm flex-row lg:text-base justify-start">
+                    <TabButton
                       selectTab={() => handleTabChange("Linguagens")}
                       active={tab === "Linguagens"}
                     >
@@ -156,7 +157,7 @@ export default function AboutMe() {
                       <span>Linguagens</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton className=""
+                    <TabButton 
                       selectTab={() => handleTabChange("Banco de Dados")}
                       active={tab === "Banco de Dados"}
                     >
@@ -166,7 +167,7 @@ export default function AboutMe() {
                     </TabButton>
 
 
-                    <TabButton className=""
+                    <TabButton 
                       selectTab={() => handleTabChange("QA/Tester")}
                       active={tab === "QA/Tester"}
                     >
@@ -174,7 +175,7 @@ export default function AboutMe() {
                       <span>QA/Tester</span> <br />  {" "}
 
                     </TabButton>
-                    <TabButton className=""
+                    <TabButton 
                       selectTab={() => handleTabChange("Versionamento")}
                       active={tab === "Versionamento"}
                     >
