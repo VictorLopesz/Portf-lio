@@ -17,6 +17,7 @@ const ABOUT_ME = [
               <li>HTML5</li>
               <li>CSS3</li>
               <li>TailwindCSS</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
           <div>
@@ -71,16 +72,17 @@ const ABOUT_ME = [
             </span>
             <ul>
               <li>Manuais</li>
-              <li>Funcionais</li>
               <li>Automatizados</li>
+              <li>API</li>
+              <li>Funcionais e não funcionais</li>
             </ul>
           </div>
           <div>
             <span className="text-[#7fabca]">Ferramentas:</span>
             <ul>
+              <li>Cypress</li>
               <li>Postman</li>
-              <li>Trello</li>
-              <li>Jira</li>
+              <li>Micro Focus ALM</li>
             </ul>
           </div>
 
