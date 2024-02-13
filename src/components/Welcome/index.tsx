@@ -67,7 +67,7 @@ const Welcome = () => {
                                 <button
                                     className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-150 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
                                     <a
-                                        href="https://drive.google.com/file/d/1CAiwzSZdvX9NxXSodc2-ewTch18Mepo-/view"
+                                        href="https://drive.google.com/file/d/18C6GijA0UBToTwHbcX1mPObDx4jhkMix/view"
 
                                         className="no-underline text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
@@ -86,9 +86,8 @@ const Welcome = () => {
                     <div className="col-span-5 place-self-center mt-4 lg:mt-0 flex justify-evenly items-center max-w-screen-lg">
                         <Fade
                             duration={2000}
-                            direction='down'
                         >
-                            <div className=" bg-gradient-to-r from-[#8bb6d4] to-[#5e91b6] rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
+                            <div className="rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] ">
                                 <Image
                                     src={gif}
                                     alt='gif'
