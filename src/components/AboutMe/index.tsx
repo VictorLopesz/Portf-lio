@@ -14,21 +14,19 @@ const ABOUT_ME = [
       <div className="grid grid-cols-2 mt-4 text-sm">
            <div>
             <ul className="">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>TailwindCSS</li>
-              <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+              <li>PHP</li>  
+              <li>React</li>
             </ul>
           </div>
           <div>
             <ul>
-              <li>JavaScript</li>
-              <li>Next Js</li>
-              <li>React</li>
-              <li>PHP</li>  
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Next.Js</li>
             </ul>
           </div>
-
       </div>
     )
   },
@@ -41,7 +39,6 @@ const ABOUT_ME = [
            <ul>
             <li>MySQL</li>
           </ul>
-
       </div>
     )
   },
@@ -54,10 +51,9 @@ const ABOUT_ME = [
           <div>
             <ul>
               <li>Git</li>
-              <li className="text-[#b0cadd] text-sm"> <a target="_blank" href="https://github.com/VictorLopesz" className="no-underline text-current font-semibold border-b-[#7fabca]">GitHub</a></li>
+              <li className="text-[#7fe6d8] text-sm"> <a target="_blank" href="https://github.com/VictorLopesz" className="no-underline text-current font-semibold border-b-[#7fabca]">GitHub</a></li>
             </ul>
           </div>
-
       </div>
     )
   },
@@ -74,19 +70,19 @@ const ABOUT_ME = [
               <li>Manuais</li>
               <li>Automatizados</li>
               <li>API</li>
-              <li>Funcionais e não funcionais</li>
+              <li>Funcionais</li>
             </ul>
           </div>
           <div>
             <span className="text-[#7fabca]">Ferramentas:</span>
             <ul>
-              <li>Cypress</li>
               <li>Postman</li>
-              <li>Micro Focus ALM</li>
               <li>Jira</li>
+              <li>ALM</li>
+              <li>Cypress</li>
+              <li>SoapUI</li>
             </ul>
           </div>
-
       </div>
   },
 ]
