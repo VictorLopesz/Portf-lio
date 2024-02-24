@@ -36,8 +36,6 @@ const Welcome = () => {
                                     1000,
                                     'Quality Assurance',
                                     1000,
-                                    'Desenvolvedor back-end',
-                                    1000,
                                 ]}
                                 wrapper="span"
                                 speed={50}
@@ -67,7 +65,7 @@ const Welcome = () => {
                                 <button
                                     className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-150 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
                                     <a
-                                        href="https://drive.google.com/file/d/18C6GijA0UBToTwHbcX1mPObDx4jhkMix/view"
+                                        href="https://drive.google.com/file/d/1m3O3ztzfyIoYMKSX-RL7YPC99h0Cr9bX/view?usp=sharing"
 
                                         className="no-underline text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
