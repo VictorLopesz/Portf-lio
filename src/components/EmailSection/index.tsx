@@ -43,7 +43,7 @@ const EmailSection = () => {
         <div className="h-screen">
             <section id="contato" className="grid md:grid-cols-2 mt-24 my-12 md:my-12 z-[40] h-screen">
                 <div>
-                    <h5 className="text-2xl font-bold text-white my-2">Contato</h5>
+                    <h5 className="text-2xl font-bold text-white my-2 uppercase">Contato</h5>
                 </div>
                 <div className="items-center justify-center flex">
                     <h6 className="text-[#ADB7BE] max-w-md text-justify mb-8 xl:mb-10 text-sm xl:text-">
@@ -57,10 +57,10 @@ const EmailSection = () => {
                     <div>
                         <div className="text-white mb-4">
                             <div className="grid grid-cols-1 ">
-                                <a href="mailto:victorlopesz@outlook.com" target="_blank" className="no-underline text-current">
+                                <a href="mailto:victorhlopes94@gmail.com" target="_blank" className="no-underline text-current">
                                     <div className="w-full flex items-center mb-2">
                                         <IoMailOutline className="w-[20px] h-[20px] mr-4 ml-2 -m-12 text-[#88c2df]" />
-                                        <span className="text-[#939393] text-[13px] hover:text-white">victorlopesz@outlook.com</span>
+                                        <span className="text-[#939393] text-[13px] hover:text-white">victorhlopes94@gmail.com</span>
                                     </div>
                                 </a>
 
