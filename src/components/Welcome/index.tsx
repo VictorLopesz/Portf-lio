@@ -65,13 +65,13 @@ const Welcome = () => {
                                 <button
                                     className="bg-[#0254ab85] hover:bg-[#2b466394] active:bg-[#5a8dc385] text-[#e2e2e3] hover:text-[#c0c0c0] active:text-[#777777] transition duration-150 items-center flex justify-center px-4 py-2 font-semibold text-sm shadow-2xl rounded-md">
                                     <a
-                                        href="https://drive.google.com/file/d/1H8GrKvmlh2ZrKkG9Q5bKD4gyfqi6IQ6V/view?usp=sharing"
+                                        href="https://drive.google.com/file/d/19YI5TjlQh0KkYo1-K1buNCNH00icIS7O/view?usp=sharing"
 
                                         className="no-underline text-current flex justify-evenly items-center mt-2"
                                         target="_blank"
                                     >
                                         <FaFilePdf size={25} className="mr-1"/>
-                                        <span>
+                                        <span className="uppercase">
                                             Download CV
                                         </span>
                                     </a>
